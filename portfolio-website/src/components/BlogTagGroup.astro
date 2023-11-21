@@ -1,0 +1,22 @@
+---
+import BlogTag from './BlogTag.astro';
+
+interface Props {
+	tag: string;
+}
+
+const { tag } = Astro.props;
+---
+<div class="tag-group">
+  <BlogTag tag={tag} />
+  <BlogTag tag={tag} />
+  <BlogTag tag={tag} />
+</div>
+
+<style>
+    .tag-group {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        gap: 15px;
+    }
+</style>
