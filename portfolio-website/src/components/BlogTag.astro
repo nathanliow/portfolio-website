@@ -1,10 +1,6 @@
 ---
 import '@fontsource-variable/dm-sans';
 
-interface Props {
-	tag: string;
-}
-
 const { tag } = Astro.props;
 ---
 <div class="tag-box">
@@ -24,10 +20,10 @@ const { tag } = Astro.props;
         width: max-content;
         height: max-content;
 		border-radius: 10px;
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 0 0 1px #E8E8E8;
 	}
     .tag-text {
-        font-size: 20px;
+        font-size: 15px;
         font-family: 'DM Sans Variable', sans-serif;
         color: #E8E8E8;
 	}

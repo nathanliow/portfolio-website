@@ -1,0 +1,27 @@
+---
+const { badge } = Astro.props;
+---
+<div class="badge-box">
+    <div class="badge-text">
+        {badge}
+    </div>
+</div>
+
+<style>
+    .badge-box {
+		display: flex;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+		background-color: #1C1E25;
+        width: max-content;
+        height: max-content;
+		border-radius: 10px;
+        background: linear-gradient(45deg, #9E51B8, #4D88D5 70%, #00BCF0);
+	}
+    .badge-text {
+        font-size: 20px;
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+	}
+</style>

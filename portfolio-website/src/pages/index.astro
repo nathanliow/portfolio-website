@@ -1,8 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import BlogTag from '../components/BlogTag.astro';
-import BlogTagGroup from '../components/BlogTagGroup.astro';
+import BlogBox from '../components/BlogBox.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -51,17 +50,12 @@ import BlogTagGroup from '../components/BlogTagGroup.astro';
 				title="Integrations"
 				body="Supercharge your project with new frameworks and libraries."
 			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
 		</ul>
-		<BlogTag
-			tag="Crypto"
-		/>
-		<BlogTagGroup
-			tag="Crypto"
+		<BlogBox
+			img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg"
+			title="Demo Blog"
+			desc="Blog post description is so very cool. It won’t say much and it won’t span to far away from the image on the left representing the blog post."
+			url="#"
 		/>
 	</main>
 </Layout>
