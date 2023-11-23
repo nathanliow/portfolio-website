@@ -1,40 +1,40 @@
 ---
-import BlogTagGroup from './BlogTagGroup.astro';
+import TagGroup from './TagGroup.astro';
 import Badge from './Badge.astro';
 import { Image } from "astro:assets";
 import '@fontsource-variable/dm-sans';
 
-const { title, img, desc, url, target = "_blank" } = Astro.props;
+const { title, img, desc, url, target = "_blank", tag1, tag2, tag3, badgeTag } = Astro.props;
 ---
-<div class="blog-box">
+<div class="content-box">
     <a href={url} target={target}>
-        <div class="blog-contents">
-            {
-                img && (
-                  <Image
-                    src={img}
-                    width={750}
-                    height={422}
-                    format="webp"
-                    alt={title}
-                    class="blog-image"
-                  />
-                )
-              }
-            <div class="blog-text">
-                <div class="blog-title">
+        <div class="content-contents">
+            { img && (
+                <Image
+                src={img}
+                width={750}
+                height={422}
+                format="webp"
+                alt={title}
+                class="content-image"
+                />
+            )}
+            <div class="content-text">
+                <div class="content-title">
                     {title}
-                    <div class="blog-badge">
+                    <div class="content-badge">
                         <Badge 
-                            badge="NEW"
+                            badge={badgeTag}
                         />
                     </div>
                 </div>
-                <div class="blog-desc">
+                <div class="content-desc">
                     {desc}
                 </div>
-                <BlogTagGroup 
-                    tag="Crypto"
+                <TagGroup 
+                    tag1={tag1}
+                    tag2={tag2}
+                    tag3={tag3}
                 />
             </div>
         </div>
@@ -42,16 +42,16 @@ const { title, img, desc, url, target = "_blank" } = Astro.props;
 </div>
 
 <style>
-    .blog-box {
+    .content-box {
         display: flex;
         flex-direction: row;
         transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
-    .blog-box:hover {
+    .content-box:hover {
         transform: scale(1.02);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    .blog-contents {
+    .content-contents {
         display: flex;
         flex-direction: column;
 
@@ -59,7 +59,7 @@ const { title, img, desc, url, target = "_blank" } = Astro.props;
             flex-direction: row;
         }
     }
-    .blog-image {
+    .content-image {
         max-width: 100%;
         border-radius: 10px;
 
@@ -67,21 +67,21 @@ const { title, img, desc, url, target = "_blank" } = Astro.props;
             max-width: 13rem;
         }
     }
-    .blog-text {
+    .content-text {
         font-family: 'DM Sans Variable', sans-serif;
         color: #E8E8E8;
         padding-left: 20px;
     }
-    .blog-title {
+    .content-title {
         font-size: 30px;
         font-weight: bold;
         display: flex;
         align-items: center;
     }
-    .blog-badge {
+    .content-badge {
         padding-left: 20px;
     }
-    .blog-desc {
+    .content-desc {
         font-size: 15px;
         padding-bottom: 15px;
     }

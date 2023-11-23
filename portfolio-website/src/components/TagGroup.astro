@@ -1,16 +1,12 @@
 ---
-import BlogTag from './BlogTag.astro';
+import Tag from './Tag.astro';
 
-interface Props {
-	tag: string;
-}
-
-const { tag } = Astro.props;
+const { tag1, tag2, tag3 } = Astro.props;
 ---
 <div class="tag-group">
-  <BlogTag tag={tag} />
-  <BlogTag tag={tag} />
-  <BlogTag tag={tag} />
+  <Tag tag={tag1} />
+  <Tag tag={tag2} />
+  <Tag tag={tag3} />
 </div>
 
 <style>

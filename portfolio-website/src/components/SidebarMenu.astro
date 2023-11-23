@@ -1,0 +1,28 @@
+---
+const { sideBarActiveItemID } = Astro.props;
+const activeClass = "bg-red"; // For primary color replace with `active` class
+---
+
+<ul class="sidebar-menu">
+    <li><a class="sidebar-menu-text" id="about-me" href="/aboutMe">About Me</a></li>
+    <li><a class="sidebar-menu-text" id="projects" href="/projects">Projects</a></li>
+    <li><a class="sidebar-menu-text" id="blogs" href="/blogs">Blogs</a></li>
+</ul>
+
+<script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
+    const activeItemElem = document.getElementById(sideBarActiveItemID);
+    activeItemElem && activeItemElem.classList.add(activeClass);
+</script>
+
+<style>
+    .sidebar-menu {
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+        overflow-y: auto;
+    }
+    .sidebar-menu-text {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 20px;
+    }
+</style>

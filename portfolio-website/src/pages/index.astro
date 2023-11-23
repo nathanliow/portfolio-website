@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import BlogBox from '../components/BlogBox.astro';
+import BlogBox from '../components/ContentBox.astro';
+import SidebarFooter from '../components/SidebarFooter.astro';
+import SidebarMenu from '../components/SidebarMenu.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -53,10 +55,15 @@ import BlogBox from '../components/BlogBox.astro';
 		</ul>
 		<BlogBox
 			img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg"
-			title="Demo Blog"
+			title="youmecar"
 			desc="Blog post description is so very cool. It won’t say much and it won’t span to far away from the image on the left representing the blog post."
 			url="#"
+			tag1="React"
+			tag2="Firebase"
+			tag3="Python"
+			badgeTag="NEW"
 		/>
+		<SidebarMenu/>
 	</main>
 </Layout>
 
