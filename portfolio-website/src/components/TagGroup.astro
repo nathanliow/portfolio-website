@@ -4,9 +4,9 @@ import Tag from './Tag.astro';
 const { tag1, tag2, tag3 } = Astro.props;
 ---
 <div class="tag-group">
-  <Tag tag={tag1} />
-  <Tag tag={tag2} />
-  <Tag tag={tag3} />
+  {tag1 && <Tag tag={tag1}/>}
+  {tag2 && <Tag tag={tag2}/>}
+  {tag3 && <Tag tag={tag3}/>}
 </div>
 
 <style>

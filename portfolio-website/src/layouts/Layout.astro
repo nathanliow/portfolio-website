@@ -1,51 +1,45 @@
 ---
 import Sidebar from '../components/Sidebar.astro';
-const { title, includeSidebar = true, sideBarActiveItemID } = Astro.props;
+import Header from '../components/Header.astro';
+
+const { title, includeSidebar = true, sidebarActive } = Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<div class="flex layout drawer lg:drawer-open">
-			{includeSidebar && <Sidebar sideBarActiveItemID={sideBarActiveItemID} />}
-			<input id="my-drawer" type="checkbox" class="drawer-toggle" />
-			<div class="drawer-content bg-base-100">
-			  <div class="md:flex md:justify-center">
-				<main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]">
-				  <slot />
-				</main>
-			  </div>
+	<body class="background">
+		<div class="drawer lg:drawer-open">
+			<input id="sidebar-toggle" type="checkbox" class="drawer-toggle"/>
+			<div class="drawer-content">
+				<Header/>
+				<div class="main-content">
+					<main class="">
+						<slot />
+					</main>
+				</div>
 			</div>
-		  </div>
-	</body>
+		  {includeSidebar && <Sidebar sidebarActive={sidebarActive} />}
+		</div>
+	  </body>
 </html>
 
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #15171E;
-		background-size: 224px;
-	}
-	.layout {
+	.background {
 		background-color: #15171E;
+	}
+	.main-content {
+		background-color: #15171E;
+		display: flex;
+		justify-content: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 100px;
 	}
 </style>

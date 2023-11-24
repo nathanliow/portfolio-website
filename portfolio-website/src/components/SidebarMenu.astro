@@ -1,22 +1,10 @@
 ---
 import SidebarMenuSelect from "./SidebarMenuSelect.astro";
-const { sideBarActiveItemID } = Astro.props;
-const activeClass = "bg-red-900";
+const { sidebarActive } = Astro.props;
 ---
 
 <ul class="sidebar-menu">
-    <SidebarMenuSelect id="about-me" href="/" icon="person" selection="About Me"/>
-    <SidebarMenuSelect id="projects" href="/" icon="terminal" selection="Projects"/>
-    <SidebarMenuSelect id="blogs" href="/" icon="pen" selection="Blogs"/>
+    <SidebarMenuSelect id="about-me" href="/" icon="person" selection="About Me" sidebarActive={sidebarActive}/>
+    <SidebarMenuSelect id="projects" href="/" icon="terminal" selection="Projects" sidebarActive={sidebarActive}/>
+    <SidebarMenuSelect id="blogs" href="/" icon="pen" selection="Blogs" sidebarActive={sidebarActive}/>
 </ul>
-
-<script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
-    const activeItemElem = document.getElementById(sideBarActiveItemID);
-    activeItemElem && activeItemElem.classList.add(activeClass);
-</script>
-
-<style>
-    .sidebar-menu {
-
-    }
-</style>

@@ -1,0 +1,70 @@
+---
+import arrowRight from '/public/arrowRight.svg'
+---
+
+<div class="navbar">
+    <div class="navbar-start">
+        <label for="sidebar-toggle" class="button-left-box">
+            <img src={arrowRight.src} alt="icon"/>
+        </label>
+    </div>
+    <div class="navbar-center">
+        <div class="button-center-box">
+            <a class="button-center-text" href="/">Nathan <span class="text-gradient">Liow</span></a>
+        </div>
+    </div>
+    <div class="navbar-end"></div>
+</div>
+
+<style>
+    .navbar {
+        position: sticky;
+        top: 0;
+        display: flex;
+        height: 20px;
+        width: 100%;
+        justify-content: center;
+        background-color: #1C1E25;
+        transition: all 0.1s ease-in-out;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+    .button-left-box {
+        background-color: #1C1E25;
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+        border-radius: 20px;
+		transition: background-color 0.15s ease-in-out;
+	}
+    .button-left-box:hover {
+		background-color: #15171E;
+	}
+    .button-center-box {
+        background-color: #1C1E25;
+        width: max-content;
+        height: max-content;
+        padding: 10px;
+        border-radius: 20px;
+		transition: background-color 0.15s ease-in-out;
+	}
+    .button-center-box:hover {
+		background-color: #15171E;
+	}
+    .button-center-text {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+        margin: 0 auto;
+	}
+    .text-gradient {
+        background-image: linear-gradient(45deg, #9E51B8, #4D88D5 70%, #00BCF0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+	}
+</style>

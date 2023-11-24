@@ -2,42 +2,40 @@
 import SidebarTitle from './SidebarTitle.astro';
 import SidebarMenu from '../components/SidebarMenu.astro';
 import SidebarFooter from '../components/SidebarFooter.astro';
-const { sideBarActiveItemID } = Astro.props;
----
 
-<div class="drawer-side z-40">
-  <aside class="sidebar">
-    <div class="sidebar-title">
-        <SidebarTitle/>
-    </div>
-    <div class="sidebar-menu">
-        <SidebarMenu sideBarActiveItemID={sideBarActiveItemID} />
-    </div>
-    <div class="sidebar-footer">
-        <SidebarFooter />
-    </div>
-  </aside>
+const { sidebarActive } = Astro.props;
+---
+<div class="drawer-side">
+    <label for="sidebar-toggle" class="drawer-overlay"></label>
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-title">
+            <SidebarTitle/>
+        </div>
+        <div class="sidebar-menu">
+            <SidebarMenu sidebarActive={sidebarActive} />
+        </div>
+        <div class="sidebar-footer">
+            <SidebarFooter />
+        </div>
+    </aside>
 </div>
 
 <style>
     .sidebar {
         display: flex;
         flex-direction: column;
-        padding-left: 50px;
-        padding-right: 20px;
-        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
         height: auto;
         min-height: 100%;
-        width: 450px;
         background-color: #1C1E25;
+        width: 450px;
     }
     .sidebar-title {
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 110px;
     }
     .sidebar-menu {
-        margin-bottom: 50px;
-    }
-    .sidebar-footer {
-
+        margin-bottom: 200px;
     }
 </style>

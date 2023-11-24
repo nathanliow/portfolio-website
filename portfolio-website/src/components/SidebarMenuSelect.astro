@@ -1,7 +1,7 @@
 ---
 import '@fontsource-variable/dm-sans';
 
-const { icon, selection, href } = Astro.props;
+const { id, icon, selection, href, sidebarActive } = Astro.props;
 
 import person from '/public/person.svg';
 import terminal from '/public/terminal.svg';
@@ -14,9 +14,10 @@ const iconMap = {
 };
 
 const selectedIcon = iconMap[icon];
+const isSelected = id === sidebarActive;
 ---
 <a class="sidebar-menu-item" href={href}>
-    <div class="selection-box">
+    <div class={`selection-box ${isSelected ? 'selected' : 'unselected'}`} >
         <div class="icon">
             <img src={selectedIcon.src} alt="icon"/>
         </div>
@@ -31,9 +32,8 @@ const selectedIcon = iconMap[icon];
 		display: flex;
         padding-left: 15px;
         padding-right: 15px;
-		background-color: #1C1E25;
         width: 400px;
-        height: 60px;
+        height: 80px;
         border-radius: 50px;
         transition: background-color 0.15s ease-in-out;
 
@@ -43,16 +43,22 @@ const selectedIcon = iconMap[icon];
     .selection-box:hover {
 		background-color: #15171E;
 	}
+    .selected {
+        background-color: #15171E;
+    }
+    .unselected {
+        background-color: #1C1E25;
+    }
     .selection-text {
         text-align: center;
         font-size: 40px;
         font-family: 'DM Sans Variable', sans-serif;
         color: #E8E8E8;
         margin: 0 auto;
-
+        padding-top: 10px;
 	}
     .icon {
-        padding-top: 5px;
-        padding-left: 5px;
+        padding-top: 15px;
+        padding-left: 10px;
     }
 </style>

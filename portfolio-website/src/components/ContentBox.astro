@@ -54,17 +54,19 @@ const { title, img, desc, url, target = "_blank", tag1, tag2, tag3, badgeTag } =
     .content-contents {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
 
         @media (min-width: 768px) {
             flex-direction: row;
         }
     }
     .content-image {
+        width: 100%;
         max-width: 100%;
         border-radius: 10px;
 
         @media (min-width: 768px) {
-            max-width: 13rem;
+            max-width: 208px;
         }
     }
     .content-text {
