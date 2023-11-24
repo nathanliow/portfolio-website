@@ -1,15 +1,13 @@
+---
+import github from '/public/github.svg';
+import gmail from '/public/gmail.svg';
+import linkedin from '/public/linkedin.svg';
+import twitterx from '/public/twitterx.svg';
+---
+
 <div class="sidebar-footer">
     <a href="https://github.com/nathanliow" target="_blank" class="mx-3" aria-label="Github" title="Github">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            class="social-icons"
-            ><path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
-            ></path>
-        </svg>
+        <img src={github.src} class="social-icons" alt="icon"/>
     </a>
 
     <a
@@ -19,13 +17,7 @@
         aria-label="Linkedin"
         title="Linkedin"
     >
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            class="social-icons"
-            ><circle cx="4.983" cy="5.009" r="2.188"></circle><path
-                d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"/>
-        </svg>
+        <img src={linkedin.src} class="social-icons" alt="icon"/>
     </a>   
     
     <a
@@ -35,12 +27,7 @@
         aria-label="Twitter"
         title="Twitter"
     >
-        <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 512 512"
-            class="social-icons"
-            ><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/>
-        </svg>
+        <img src={twitterx.src} class="social-icons" alt="icon"/>
     </a>   
 
     <a
@@ -50,12 +37,7 @@
         aria-label="Gmail"
         title="Gmail"
     >
-        <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 512 512"
-            class="social-icons"
-            ><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
-        </svg>
+        <img src={gmail.src} class="social-icons" alt="icon"/>
     </a>   
 </div>
 
@@ -67,11 +49,11 @@
     }
     .social-icons {
         fill: #9E51B8;
-        width: 40px;
-        height: 40px;
-        transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        width: 48px;
+        height: 48px;
+        transition: transform 0.15s ease-in-out;
     }
     .social-icons:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 </style>

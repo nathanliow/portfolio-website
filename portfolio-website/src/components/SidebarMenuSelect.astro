@@ -1,0 +1,58 @@
+---
+import '@fontsource-variable/dm-sans';
+
+const { icon, selection, href } = Astro.props;
+
+import person from '/public/person.svg';
+import terminal from '/public/terminal.svg';
+import pen from '/public/pen.svg';
+
+const iconMap = {
+  person,
+  terminal,
+  pen,
+};
+
+const selectedIcon = iconMap[icon];
+---
+<a class="sidebar-menu-item" href={href}>
+    <div class="selection-box">
+        <div class="icon">
+            <img src={selectedIcon.src} alt="icon"/>
+        </div>
+        <div class="selection-text">
+            {selection}
+        </div>
+    </div>
+  </a>
+
+<style>
+    .selection-box {
+		display: flex;
+        padding-left: 15px;
+        padding-right: 15px;
+		background-color: #1C1E25;
+        width: 400px;
+        height: 60px;
+        border-radius: 50px;
+        transition: background-color 0.15s ease-in-out;
+
+        /* controls distance between each selection */
+        margin-top: 50px;
+	}
+    .selection-box:hover {
+		background-color: #15171E;
+	}
+    .selection-text {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+        margin: 0 auto;
+
+	}
+    .icon {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+</style>

@@ -1,12 +1,13 @@
 ---
+import SidebarMenuSelect from "./SidebarMenuSelect.astro";
 const { sideBarActiveItemID } = Astro.props;
-const activeClass = "bg-red"; // For primary color replace with `active` class
+const activeClass = "bg-red-900";
 ---
 
 <ul class="sidebar-menu">
-    <li><a class="sidebar-menu-text" id="about-me" href="/aboutMe">About Me</a></li>
-    <li><a class="sidebar-menu-text" id="projects" href="/projects">Projects</a></li>
-    <li><a class="sidebar-menu-text" id="blogs" href="/blogs">Blogs</a></li>
+    <SidebarMenuSelect id="about-me" href="/" icon="person" selection="About Me"/>
+    <SidebarMenuSelect id="projects" href="/" icon="terminal" selection="Projects"/>
+    <SidebarMenuSelect id="blogs" href="/" icon="pen" selection="Blogs"/>
 </ul>
 
 <script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
@@ -16,13 +17,6 @@ const activeClass = "bg-red"; // For primary color replace with `active` class
 
 <style>
     .sidebar-menu {
-        font-family: 'DM Sans Variable', sans-serif;
-        color: #E8E8E8;
-        overflow-y: auto;
-    }
-    .sidebar-menu-text {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        font-size: 20px;
+
     }
 </style>

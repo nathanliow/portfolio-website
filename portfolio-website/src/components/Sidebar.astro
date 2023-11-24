@@ -1,4 +1,43 @@
 ---
-import SidebarFooter from '../components/SidebarFooter.astro';
+import SidebarTitle from './SidebarTitle.astro';
 import SidebarMenu from '../components/SidebarMenu.astro';
+import SidebarFooter from '../components/SidebarFooter.astro';
+const { sideBarActiveItemID } = Astro.props;
 ---
+
+<div class="drawer-side z-40">
+  <aside class="sidebar">
+    <div class="sidebar-title">
+        <SidebarTitle/>
+    </div>
+    <div class="sidebar-menu">
+        <SidebarMenu sideBarActiveItemID={sideBarActiveItemID} />
+    </div>
+    <div class="sidebar-footer">
+        <SidebarFooter />
+    </div>
+  </aside>
+</div>
+
+<style>
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 20px;
+        padding-top: 10px;
+        height: auto;
+        min-height: 100%;
+        width: 450px;
+        background-color: #1C1E25;
+    }
+    .sidebar-title {
+        margin-bottom: 50px;
+    }
+    .sidebar-menu {
+        margin-bottom: 50px;
+    }
+    .sidebar-footer {
+
+    }
+</style>
