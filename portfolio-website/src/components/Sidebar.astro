@@ -5,7 +5,7 @@ import SidebarFooter from '../components/SidebarFooter.astro';
 
 const { sidebarActive } = Astro.props;
 ---
-<div class="drawer-side">
+<div class="drawer-side z-10">
     <label for="sidebar-toggle" class="drawer-overlay"></label>
     <aside id="sidebar" class="sidebar">
         <div class="sidebar-title">
@@ -14,9 +14,7 @@ const { sidebarActive } = Astro.props;
         <div class="sidebar-menu">
             <SidebarMenu sidebarActive={sidebarActive} />
         </div>
-        <div class="sidebar-footer">
-            <SidebarFooter />
-        </div>
+        <SidebarFooter />
     </aside>
 </div>
 
@@ -29,13 +27,13 @@ const { sidebarActive } = Astro.props;
         height: auto;
         min-height: 100%;
         background-color: #1C1E25;
-        width: 450px;
+        width: 400px;
     }
     .sidebar-title {
-        margin-top: 20px;
-        margin-bottom: 110px;
+        margin-top: 40px;
+        margin-bottom: 60px;
     }
     .sidebar-menu {
-        margin-bottom: 200px;
+        margin-bottom: 70px;
     }
 </style>

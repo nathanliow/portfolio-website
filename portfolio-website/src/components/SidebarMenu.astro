@@ -8,3 +8,11 @@ const { sidebarActive } = Astro.props;
     <SidebarMenuSelect id="projects" href="/" icon="terminal" selection="Projects" sidebarActive={sidebarActive}/>
     <SidebarMenuSelect id="blogs" href="/" icon="pen" selection="Blogs" sidebarActive={sidebarActive}/>
 </ul>
+
+<style>
+    .sidebar-menu {
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow-y: auto;
+    }
+</style>

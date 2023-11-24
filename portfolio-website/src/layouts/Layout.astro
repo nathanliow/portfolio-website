@@ -17,15 +17,18 @@ const { title, includeSidebar = true, sidebarActive } = Astro.props;
 	<body class="background">
 		<div class="drawer lg:drawer-open">
 			<input id="sidebar-toggle" type="checkbox" class="drawer-toggle"/>
-			<div class="drawer-content">
+			<div class="drawer-content background">
 				<Header/>
-				<div class="main-content">
-					<main class="">
-						<slot />
-					</main>
+				<div class="flex background">
+					<div class="gradient-rectangle"></div>
+					<div class="main-content">
+						<main class="">
+							<slot />
+						</main>
+					</div>
 				</div>
 			</div>
-		  {includeSidebar && <Sidebar sidebarActive={sidebarActive} />}
+		  	{includeSidebar && <Sidebar sidebarActive={sidebarActive} />}
 		</div>
 	  </body>
 </html>
@@ -38,8 +41,26 @@ const { title, includeSidebar = true, sidebarActive } = Astro.props;
 		background-color: #15171E;
 		display: flex;
 		justify-content: center;
-		padding-left: 20px;
+		max-width: 80%;
+		padding-left: 50px;
 		padding-right: 20px;
 		padding-top: 100px;
+		@media (max-width: 1024px) {
+            max-width: 95%;
+        }
+	}
+	.gradient-rectangle {
+		display: flex;
+		flex-direction: row;
+		width: 5px; 
+		height: 1400px;
+		border-radius: 20px;
+		margin-top: 100px;
+		margin-left: 100px;
+		background: linear-gradient(to bottom, #00BCF0, #5781D1 50%,#9E51B8);
+    
+		@media (max-width: 1124px) {
+            display: none;
+        }
 	}
 </style>

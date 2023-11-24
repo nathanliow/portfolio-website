@@ -4,7 +4,6 @@ import gmail from '/public/gmail.svg';
 import linkedin from '/public/linkedin.svg';
 import twitterx from '/public/twitterx.svg';
 ---
-
 <div class="sidebar-footer">
     <a href="https://github.com/nathanliow" target="_blank" class="mx-3" aria-label="Github" title="Github">
         <img src={github.src} class="social-icons" alt="icon"/>
@@ -43,6 +42,9 @@ import twitterx from '/public/twitterx.svg';
 
 <style>
     .sidebar-footer {
+        background-color: #1C1E25;
+        position: sticky;
+        bottom: 0px;
         display: grid;
         grid-template-columns: repeat(4, max-content);
         gap: 25px;
@@ -52,6 +54,8 @@ import twitterx from '/public/twitterx.svg';
         width: 48px;
         height: 48px;
         transition: transform 0.15s ease-in-out;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .social-icons:hover {
         transform: scale(1.2);

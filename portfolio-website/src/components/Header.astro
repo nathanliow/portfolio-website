@@ -20,6 +20,7 @@ import arrowRight from '/public/arrowRight.svg'
     .navbar {
         position: sticky;
         top: 0;
+        z-index: 2;
         display: flex;
         height: 20px;
         width: 100%;
@@ -27,6 +28,7 @@ import arrowRight from '/public/arrowRight.svg'
         background-color: #1C1E25;
         transition: all 0.1s ease-in-out;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
 
         @media (min-width: 1024px) {
             display: none;
