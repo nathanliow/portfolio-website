@@ -18,6 +18,7 @@ const { sidebarActive } = Astro.props;
 
 <style>
     .drawer-side {
+        z-index: 10;
         @media (max-width: 1024px) {
             height: 100%;
         }
@@ -29,7 +30,7 @@ const { sidebarActive } = Astro.props;
         height: auto;
         min-height: 100%;
         background-color: #1C1E25;
-        width: 400px;
+        width: 350px;
     }
     .sidebar-title {
         padding-top: 60px;

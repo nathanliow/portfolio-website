@@ -5,8 +5,8 @@ const { sidebarActive } = Astro.props;
 
 <ul class="sidebar-menu">
     <SidebarMenuSelect id="about-me" href="/" icon="person" selection="About Me" sidebarActive={sidebarActive}/>
-    <SidebarMenuSelect id="projects" href="/" icon="terminal" selection="Projects" sidebarActive={sidebarActive}/>
-    <SidebarMenuSelect id="blogs" href="/" icon="pen" selection="Blogs" sidebarActive={sidebarActive}/>
+    <SidebarMenuSelect id="projects" href="/projects" icon="terminal" selection="Projects" sidebarActive={sidebarActive}/>
+    <SidebarMenuSelect id="blogs" href="/blogs" icon="pen" selection="Blogs" sidebarActive={sidebarActive}/>
 </ul>
 
 <style>

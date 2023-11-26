@@ -1,14 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import ContentBox from '../components/ContentBox.astro';
-// import { getCollection } from "astro:content";
-
-// const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-// const last_posts = posts.slice(0, 3);
 ---
 
-<Layout title="Nathan Liow" sidebarActive="projects">
-
+<BaseLayout title="Nathan Liow" sidebarActive="projects">
 	<div>
 		<div class="text-3xl w-full font-bold mb-5">My last projects {"</>"}</div>
 	</div>
@@ -23,6 +18,7 @@ import ContentBox from '../components/ContentBox.astro';
 	  tag3="CSS"
 	  badgeTag="NEW"
 	/>
+	<div class="divider my-10"></div>
 	<ContentBox
 	  title="youmecar"
 	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
@@ -33,7 +29,7 @@ import ContentBox from '../components/ContentBox.astro';
 	  tag3="Python"
 	  badgeTag="NEW"
 	/>
-	<div class="divider my-20"></div>
+	<div class="divider my-10"></div>
 	<ContentBox
 	  title="Manim Animation"
 	  img="/post_img.webp"
@@ -44,7 +40,7 @@ import ContentBox from '../components/ContentBox.astro';
 	  tag3="Video Animation"
 	  badgeTag=""
 	/>
-	<div class="divider my-20"></div>
+	<div class="divider my-10"></div>
 	<ContentBox
 	  title="Physics Calculator Website"
 	  img="/post_img.webp"
@@ -55,6 +51,7 @@ import ContentBox from '../components/ContentBox.astro';
 	  tag3="CSS"
 	  badgeTag=""
 	/>
+	<div class="divider my-10"></div>
 	<ContentBox
 	  title="Evil Hangman"
 	  img="/post_img.webp"
@@ -65,6 +62,7 @@ import ContentBox from '../components/ContentBox.astro';
 	  tag3=""
 	  badgeTag=""
 	/>
+	<div class="divider my-10"></div>
 	<ContentBox
 	  title="Codecademy Terminal RPG"
 	  img="/post_img.webp"
@@ -75,27 +73,8 @@ import ContentBox from '../components/ContentBox.astro';
 	  tag3=""
 	  badgeTag=""
 	/>
-  
-	<div>
-	  <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-	</div>
-  
-	<!-- {
-	  last_posts.map((post) => (
-		<>
-		  <ContentBox
-			title={post.data.title}
-			img={post.data.heroImage}
-			desc={post.data.description}
-			url={"/blog/" + post.slug}
-			target="_self"
-			badge={post.data.badge}
-		  />
-		  <div class="divider my-0" />
-		</>
-	  ))
-	} -->
-  </Layout>
+	<div class="divider my-10"></div>
+</BaseLayout>
 
 <!-- <style>
 	main {
