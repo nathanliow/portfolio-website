@@ -1,18 +1,18 @@
 ---
 import Tag from './Tag.astro';
 
-const { tag1, tag2, tag3 } = Astro.props;
+const { tags } = Astro.props;
 ---
 <div class="tag-group">
-  {tag1 && <Tag tag={tag1}/>}
-  {tag2 && <Tag tag={tag2}/>}
-  {tag3 && <Tag tag={tag3}/>}
+  {tags && tags.map((tag) => (
+    <Tag tag={tag} />
+  ))}
 </div>
 
 <style>
     .tag-group {
         display: grid;
-        grid-template-columns: repeat(3, max-content);
+        grid-template-columns: repeat(4, max-content);
         gap: 15px;
     }
 </style>

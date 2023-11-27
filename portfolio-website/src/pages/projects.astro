@@ -3,9 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContentBox from '../components/ContentBox.astro';
 ---
 
-<BaseLayout title="Nathan Liow" sidebarActive="projects">
+<BaseLayout title="Projects" sidebarActive="projects">
 	<div>
-		<div class="text-3xl w-full font-bold mb-5">My latest projects</div>
+		<div class="text-3xl w-full font-bold mb-5">My Latest Projects</div>
 	</div>
 
 	<ContentBox
@@ -13,124 +13,70 @@ import ContentBox from '../components/ContentBox.astro';
 	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
-	  tag1="Astro"
-	  tag2="HTML"
-	  tag3="CSS"
+	  tags={["Astro", "HTML", "CSS"]}
 	  badgeTag="NEW"
 	/>
-	<div class="divider my-10"></div>
+	<div class="divider"></div>
 	<ContentBox
 	  title="youmecar"
 	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
-	  tag1="React"
-	  tag2="Firebase"
-	  tag3="Python"
+	  tags={["Python", "React", "Firebase"]}
 	  badgeTag="NEW"
 	/>
-	<div class="divider my-10"></div>
+	<div class="divider"></div>
 	<ContentBox
 	  title="Manim Animation"
 	  img="/post_img.webp"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
-	  tag1="Python"
-	  tag2="Manim Library"
-	  tag3="Video Animation"
+	  tags={["Python", "Manim Library", "Video Animation"]}
 	  badgeTag=""
 	/>
-	<div class="divider my-10"></div>
+	<div class="divider"></div>
 	<ContentBox
 	  title="Physics Calculator Website"
 	  img="/post_img.webp"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
-	  tag1="Python"
-	  tag2="HTML"
-	  tag3="CSS"
+	  tags={["Python", "HTML", "CSS"]}
 	  badgeTag=""
 	/>
-	<div class="divider my-10"></div>
+	<div class="divider"></div>
 	<ContentBox
 	  title="Evil Hangman"
 	  img="/post_img.webp"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
-	  tag1="Java"
-	  tag2=""
-	  tag3=""
+	  tags={["Java"]}
 	  badgeTag=""
 	/>
-	<div class="divider my-10"></div>
+	<div class="divider"></div>
 	<ContentBox
 	  title="Codecademy Terminal RPG"
 	  img="/post_img.webp"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
-	  tag1="Python"
-	  tag2=""
-	  tag3=""
+	  tags={["Python"]}
 	  badgeTag=""
 	/>
-	<div class="divider my-10"></div>
+	<div class="divider"></div>
 </BaseLayout>
 
-<!-- <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+<style>
+	.divider {
+		margin-top: 25px;
+		margin-bottom: 25px;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
+	.divider-divider-color:before {
+		--tw-bg-opacity: 1;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
 	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
+	.divider-divider-color:after {
+		--tw-bg-opacity: 1;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style> -->
+</style>

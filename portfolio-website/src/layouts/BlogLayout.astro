@@ -1,5 +1,7 @@
-<!-- ---
+---
 import { type BlogSchema } from "../content/config";
+import Badge from "src/components/Badge.astro";
+import Tag from "src/components/Tag.astro";
 import BaseLayout from "./BaseLayout.astro";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
@@ -8,24 +10,30 @@ export interface Props extends BlogSchema {}
 
 const { title, description, pubDate, updatedDate, heroImage, badge, tags = [] } = Astro.props;
 dayjs.extend(localizedFormat);
-const displayDate = dayjs(pubDate).format("ll")
+const displayDate = dayjs(pubDate).format("LL")
 import { Image } from "astro:assets";
 ---
 
 <BaseLayout title={title} description={description} image={heroImage}>
-  <main class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
-      {heroImage && <Image width={750} height={422} format="webp" src={heroImage} alt={title} class="w-full mb-6" />}
-      <h1 class="title my-2 text-4xl font-bold">{title}</h1>
+  <main>
+    <article>
+      {heroImage && <Image width={750} height={422} format="webp" src={heroImage} alt={title} class="image" />}
+      <div class="title-con">
+        <div class="title">{title}</div>
+        <div class="badge">
+          {badge && <Badge badge={badge}/>}
+        </div>
+      </div>
       {pubDate && <time>{displayDate}</time>}
       <br />
-      {badge && <div class="badge badge-secondary my-1">{badge}</div>}
       {
         tags &&
           tags.map((tag) => (
-            <a href={`/blog/tag/${tag}`} class="badge badge-outline ml-2 no-underline">
-              {tag}
-            </a>
+            <div class="tag">
+              <a href={`/blogs/tag/${tag}`} class="tag-text">
+                {tag}
+              </a>
+            </div>
           ))
       }
       {
@@ -36,8 +44,83 @@ import { Image } from "astro:assets";
           </div>
         )
       }
-      <div class="divider my-2"></div>
+      <div class="divider"></div>
       <slot />
     </article>
   </main>
-</BaseLayout> -->
+  <div class="divider"></div>
+</BaseLayout>
+
+<style>
+  main {
+    display: flex;
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+  article {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px; 
+  }
+  article img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+  }
+  .title-con {
+    display: flex;
+  }
+  .title {
+    margin-bottom: 1px; 
+    font-size: 35px; 
+    font-weight: bold;
+    color: #E8E8E8;
+  }
+  .badge {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #15171E;
+  }
+  .image {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .tag {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+		background-color: #1C1E25;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(#1C1E25, #1C1E25), linear-gradient(45deg, #9E51B8, #4D88D5 70%, #00BCF0);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  .tag-text {
+    font-size: 15px;
+    font-family: 'DM Sans Variable', sans-serif;
+    color: #E8E8E8;
+  }
+  .divider {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.divider-divider-color:before {
+		--tw-bg-opacity: 1;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+	.divider-divider-color:after {
+		--tw-bg-opacity: 1;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+</style>

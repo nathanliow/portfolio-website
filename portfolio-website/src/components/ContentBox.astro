@@ -4,7 +4,7 @@ import Badge from './Badge.astro';
 import { Image } from "astro:assets";
 import '@fontsource-variable/dm-sans';
 
-const { title, img, desc, url, target = "_blank", tag1, tag2, tag3, badgeTag } = Astro.props;
+const { title, img, desc, url, target = "_blank", tags, badgeTag } = Astro.props;
 ---
 <div class="content-box">
     <a href={url} target={target}>
@@ -23,19 +23,13 @@ const { title, img, desc, url, target = "_blank", tag1, tag2, tag3, badgeTag } =
                 <div class="content-title">
                     {title}
                     <div class="content-badge">
-                        <Badge 
-                            badge={badgeTag}
-                        />
+                        <Badge badge={badgeTag}/>
                     </div>
                 </div>
                 <div class="content-desc">
                     {desc}
                 </div>
-                <TagGroup 
-                    tag1={tag1}
-                    tag2={tag2}
-                    tag3={tag3}
-                />
+                <TagGroup tags={tags}/>
             </div>
         </div>
     </a>
