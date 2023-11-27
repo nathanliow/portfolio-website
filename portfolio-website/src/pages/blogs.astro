@@ -4,7 +4,35 @@ import ContentBox from '../components/ContentBox.astro';
 ---
 
 <BaseLayout title="Nathan Liow" sidebarActive="blogs">
+	<div>
+		<div class="text-3xl w-full font-bold mb-5">My latest blogs</div>
+	</div>
 
+	<ContentBox
+	  title="FTX Collapse"
+	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	  url="/blogs/1.112523"
+	  target="_self"
+	  tag1="Astro"
+	  tag2="HTML"
+	  tag3="CSS"
+	  badgeTag="November 26th, 2023"
+	/>
+	<div class="divider my-10"></div>
+	<ContentBox
+	  title="August 20th, 2023"
+	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	  url="/blogs/1.112523"
+	  target="_self"
+	  tag1="React"
+	  tag2="Firebase"
+	  tag3="Python"
+	  badgeTag="NEW"
+	/>
+	<div class="divider my-10"></div>
+	
 </BaseLayout>
 
 <!-- <style>
