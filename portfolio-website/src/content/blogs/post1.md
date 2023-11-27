@@ -1,13 +1,15 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
+title: "Creating my Portfolio Website"
+description: "An attempt to learn all about a completely new language and 
+to simply throw myself into the deepend. Definitely encountered many 
+struggles but determination has brought me far."
+pubDate: "Nov 27 2023"
 heroImage: "https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
 badge: ""
-tags: ["tokio"]
+tags: ["Astro", "Portfolio Website"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+## This isn't working because I styled the whole blog-text font and weight ##
 incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
 malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
 pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
