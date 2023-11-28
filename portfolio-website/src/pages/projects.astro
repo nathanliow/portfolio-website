@@ -1,9 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContentBox from '../components/ContentBox.astro';
+
+// project hero images
 import PortfolioWebsitePic from '/public/projects/portfolio-website.png';
 import youmecarPic from '/public/projects/youmecar.png';
 import manimPic from '/public/projects/manim.png';
+import physicsCalc from '/public/projects/physics-calc.png';
+import hangman from '/public/projects/hangman.png';
+import terminalRPG from '/public/projects/terminal-rpg.png';
 ---
 
 <BaseLayout title="Projects" sidebarActive="projects">
@@ -40,7 +45,7 @@ import manimPic from '/public/projects/manim.png';
 	<div class="divider"></div>
 	<ContentBox
 	  title="Physics Calculator Website"
-	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+	  img={physicsCalc}
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Python", "HTML", "CSS"]}
@@ -49,7 +54,7 @@ import manimPic from '/public/projects/manim.png';
 	<div class="divider"></div>
 	<ContentBox
 	  title="Evil Hangman"
-	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+	  img={hangman}
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Java"]}
@@ -58,7 +63,7 @@ import manimPic from '/public/projects/manim.png';
 	<div class="divider"></div>
 	<ContentBox
 	  title="Codecademy Terminal RPG"
-	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+	  img={terminalRPG}
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Python"]}
