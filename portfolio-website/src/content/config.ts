@@ -21,6 +21,9 @@ const projectSchema = z.object({
     tags: z.array(z.string()).refine(items => new Set(items).size === items.length, {
         message: 'tags must be unique',
     }).optional(),
+    code: z.string().optional(),
+    demo: z.string().optional(),
+    blog: z.string().optional(),
 });
 
 export type BlogSchema = z.infer<typeof blogSchema>;

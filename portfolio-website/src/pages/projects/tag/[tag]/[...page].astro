@@ -2,6 +2,8 @@
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import ContentBox from "../../../../components/ContentBox.astro";
 import { getCollection } from "astro:content";
+import pageLeft from "/public/svg/pageLeft.svg";
+import pageRight from "/public/svg/pageRight.svg";
 
 export async function getStaticPaths({ paginate }) {
   const all_projects = await getCollection("projects");
@@ -13,6 +15,7 @@ export async function getStaticPaths({ paginate }) {
     const filtered_projects = all_projects.filter((post) => {
       return post.data.tags?.includes(tag);
     });
+    filtered_projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
     return paginate(filtered_projects, {params: { tag }, pageSize: 10,
 });
   });
@@ -22,15 +25,14 @@ const { page } = Astro.props;
 const params = Astro.params;
 ---
 
-<BaseLayout title={"Project - " + params.tag} sidebarActive="projects">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Project - {params.tag}</div>
+<BaseLayout title={"Projects using " + params.tag} sidebarActive="projects">
+  <div class="title">
+    <div class="title-text">Projects using {params.tag}</div>
   </div>
   {
     page.data.length === 0 ? (
-      <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
-        <p class="font-bold">Sorry!</p>
-        <p>There are no projects to show at the moment. Check back later!</p>
+      <div class="no-content-message">
+        Sorry! There are no projects to show at the moment. Check back later!
       </div>
     ) : (
       <ul>
@@ -42,7 +44,7 @@ const params = Astro.params;
               desc={post.data.description}
               url={"/projects/" + post.slug}
               target="_self"
-              badge={post.data.badge}
+              badgeTag={post.data.badge}
               tags={post.data.tags}
             />
             <div class="divider" />
@@ -52,21 +54,14 @@ const params = Astro.params;
     )
   }
 
-  <div class="flex justify-between">
+  <div class="page-buttons">
     {
       page.url.prev ? (
-        <a href={page.url.prev} class="btn btn-ghost my-10 mx-5">
-          {" "}
-          <svg
-            class="h-6 w-6 fill-current md:h-8 md:w-8"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-          </svg>{" "}
-          Recent posts
+        <a href={page.url.prev} class="page-button">
+          <img src={pageLeft.src} class="page-icon" alt="Previous Page"/>
+          <div class="page-button-text">
+            Recent Projects
+          </div>
         </a>
       ) : (
         <div />
@@ -74,18 +69,11 @@ const params = Astro.params;
     }
     {
       page.url.next ? (
-        <a href={page.url.next} class="btn btn-ghost my-10 mx-5">
-          Older Posts{" "}
-          <svg
-            class="h-6 w-6 fill-current md:h-8 md:w-8"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            {" "}
-            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-          </svg>
+        <a href={page.url.next} class="page-button">
+          <div class="page-button-text">
+            Older Projects
+          </div>
+          <img src={pageRight.src} class="page-icon" alt="Next Page"/>
         </a>
       ) : (
         <div />
@@ -95,6 +83,58 @@ const params = Astro.params;
 </BaseLayout>
 
 <style>
+  .title {
+    margin-bottom: 15px;
+  }
+  .title-text {
+    color: #E8E8E8;
+    font-size: 30px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .page-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-button {
+    display: flex;
+    background-color: #15171E;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: max-content;
+    border-radius: 20px;
+    transition: all 0.15s ease-in-out;
+  }
+  .page-button-text {
+    background-image: linear-gradient(to right, #9E51B8, #00BCF0 50%, #E8E8E8 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'DM Sans Variable', sans-serif;
+    padding-top: 7px;
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  .page-button-text:hover {
+    background-position: 0;
+  }
+  .page-button:hover {
+    background-color: #1C1E25;
+    transform: scale(1.05);
+  }
+  .page-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .no-content-message {
+    background-color: #15171E;
+    width: 100%;
+    min-width: 100%;
+    padding: 10px;
+  }
   .divider {
 		margin-top: 25px;
 		margin-bottom: 25px;

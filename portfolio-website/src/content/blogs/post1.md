@@ -4,8 +4,8 @@ description: "An attempt to learn all about a completely new language and
 to simply throw myself into the deepend. Definitely encountered many 
 struggles but determination has brought me far."
 pubDate: "Nov 27 2023"
-heroImage: "/public/blogs/post1/hero.png"
-badge: ""
+heroImage: "/blogs/post1/hero.png"
+badge: "NEW"
 tags: ["Astro", "Portfolio Website"]
 updatedDate: "Nov 28 2023"
 ---
@@ -28,7 +28,7 @@ Some of the hardest challenges of this project:
 
 <br/>
 <center>
-    <img src="/public/blogs/post1/resize.png" alt="Resizing being a pain" width="200" height="100">
+    <img src="/blogs/post1/resize.png" alt="Resizing being a pain" width="200" height="100">
 </center>
 
 Resizing was by far the most difficult part to get right when building the website. It was only a problem I noticed about halfway into development. I noticed that for smaller screen sizes such as phones, the sidebar would not scale all the way down, leaving an awkward rectangle on the top half of the screen. The color of the background would also not fit the entire screen at certain widths and the scrollbar would popup inconsistently. All these different issues left me confused for hours on end. I first tackled the background so that the color would fill the entire screen which required styling the broader div container to have the same background color. In order to fix the inconsistent scrollbar, I revamped my width and height structure of all of the image and text content present on the screen so that it would always have max width between the borders of the viewing window. This one took a bit but I had eventually the right settings to make it flow seamlessly. Then came the sidebar, which took days to configure and dozens of iterations to ensure it would pull out right, have the buttons scaled and stay in its consistent position, style the text to give it some personality, and have it all not break when the screen became smaller. 
@@ -37,7 +37,7 @@ Another problem I faced when diving into frontend with having minimal prior know
 
 <br/>
 <center>
-    <img src="/public/blogs/post1/structure.png" alt="Organized" width="200" height="1000">
+    <img src="/blogs/post1/structure.png" alt="Organized" width="200" height="1000">
 </center>
 
 Despite the excellent documentation provided by some of the tools I used, I still struggled to understand the necessity for some lines of code or the purpose of certain elements in a design. Using tools like Figma, daisyUI, Astro, or just basic HTML, JavaScript, and CSS, I would sometimes find myself roadblocked by alien syntax and keywords. These roadblocks led to hours of processing and studying documentation in order to understand what the code I'm looking at is trying to do. For example, learning all the different keywords of CSS and JavaScript in order to achieve the look and behavior I'm going for took many iterations to get just right. Or the way how variables are passed down through different components and how files are linked also created a steep learning curve I had to conquer. 
