@@ -1,0 +1,144 @@
+---
+import { type ProjectSchema } from "../content/config";
+import Badge from "src/components/Badge.astro";
+import BaseLayout from "./BaseLayout.astro";
+
+export interface Props extends ProjectSchema {}
+
+const { title, description, heroImage, badge, tags = [] } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<BaseLayout title={title} description={description} image={heroImage}>
+  <main>
+    <article>
+      {heroImage && <Image width={750} height={422} format="png" src={heroImage} alt={title} class="image"/>}
+      <div class="title-con">
+        <div class="title">{title}</div>
+        <div class="badge">
+          {badge && <Badge badge={badge}/>}
+        </div>
+      </div>
+      <div class="tag-group">
+        {tags && tags.map((tag) => (
+          <div class="tag">
+            <a href={`/projects/tag/${tag}`} class="tag-text">
+              {tag}
+            </a>
+          </div>
+        ))}
+      </div>
+      <div class="divider"></div>
+      <div class="project-text">
+        <slot />
+      </div>
+    </article>
+  </main>
+  <div class="divider"></div>
+</BaseLayout>
+
+<style is:global>
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    a {
+        color: #9E51B8;
+        transition: all 0.15s ease-in-out;
+    }
+    a:hover {
+        color: #00BCF0;
+    }
+</style>
+
+<style>
+    main {
+        display: flex;
+        @media (min-width: 768px) {
+        justify-content: center;
+        }
+    }
+    article {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px; 
+    }
+    article img {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+    .title-con {
+        display: flex;
+    }
+    .title {
+        font-size: 35px; 
+        font-family: 'DM Sans Variable', sans-serif;
+        font-weight: bold;
+        color: #E8E8E8;
+    }
+    .badge {
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #15171E;
+    }
+    .image {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .tag-group {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px; 
+    }
+    .tag {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2px;
+        padding-left: 15px;
+        padding-right: 15px;
+            background-color: #1C1E25;
+        width: max-content;
+        height: max-content;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-image: linear-gradient(#1C1E25, #1C1E25), linear-gradient(45deg, #9E51B8, #4D88D5 70%, #00BCF0);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+    }
+    .tag-text {
+        font-size: 16px;
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+    }
+    .project-text {
+        font-size: 16px;
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+    }
+    .divider {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .divider-divider-color:before {
+        --tw-bg-opacity: 1;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .divider-divider-color:after {
+        --tw-bg-opacity: 1;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+</style>

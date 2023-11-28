@@ -4,24 +4,24 @@ import ContentBox from "../../components/ContentBox.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection("blogs");
-  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-  return paginate(posts, { pageSize: 10 });
+  const projects = await getCollection("projects");
+  projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return paginate(projects, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Blog" sidebarActive="blogs">
+<BaseLayout title="Project" sidebarActive="projects">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">My Latest Blogs</div>
+    <div class="text-3xl w-full font-bold">My Latest Projects</div>
   </div>
 
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
-        <p>There are no blog posts to show at the moment. Check back later!</p>
+        <p>There are no projects to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>
@@ -31,7 +31,7 @@ const { page } = Astro.props;
               title={post.data.title}
               img={post.data.heroImage}
               desc={post.data.description}
-              url={"/blogs/" + post.slug}
+              url={"/projects/" + post.slug}
               target="_self"
               badge={post.data.badge}
               tags={post.data.tags}
