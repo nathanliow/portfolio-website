@@ -4,56 +4,49 @@ description: "An attempt to learn all about a completely new language and
 to simply throw myself into the deepend. Definitely encountered many 
 struggles but determination has brought me far."
 pubDate: "Nov 27 2023"
-heroImage: "https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+heroImage: "/public/blogs/post1/hero.png"
 badge: ""
 tags: ["Astro", "Portfolio Website"]
+updatedDate: "Nov 28 2023"
 ---
 
-## This isn't working because I styled the whole blog-text font and weight ##
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+# How it began #
+I wanted to create something that was personal and uniquely mine. It also felt like I had finally enough projects to display for the world to see. It was like a weird attachment to the idea of owning a little corner of the internet. For every internship I applied to, I would simply skip over the "personal website" text box entry, but I always felt a little sting for not having something to place in there. I wanted to change that, while getting an easy opportuntity to learn something new. 
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+# The journey of how was it made #
+I told some friends about the idea of making a personal portfolio website using React as that was the extent of my frontend knowledge but they were quick to tell me that wasn't necessary. What I needed was a static website generator. The idea seemed obvious enough, a portfolio website was a static website kind of idea. I looked into different static site generators and came across this <a target="_blank" href="https://jamstack.org/generators/">Jamstack</a>. A little scrolling later and I settled on using Astro. 
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+So why Astro?
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Aside from a personal referral, the <a target="_blank" href="https://docs.astro.build/en/getting-started/">extensive documentation</a> made it very beginner friendly, especially with my limited JavaScript knowledge at the time. Astro also makes the website blazing fast by stripping JavaScript and unused elements. The various integrations Astro supports will allow me to scale in the future, not just with this website but with future websites I may create. Astro just came with everything I needed, along with being easy to use and straight to the point. As someone who knew nothing about frontend, I'd recommend giving Astro a try. 
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+# Some challenges about this project #
+Some of the hardest challenges of this project:
+1. &nbsp;&nbsp;&nbsp;&nbsp;1\. Making resizing natural so it flows and works smoothly on all devices.
+2. &nbsp;&nbsp;&nbsp;&nbsp;2\. Maintaining a consistent and natural project structure. 
+3. &nbsp;&nbsp;&nbsp;&nbsp;3\. Learning all the different tools necessary for creating a portfolio website.  
+
+<br/>
+<center>
+    <img src="/public/blogs/post1/resize.png" alt="Resizing being a pain" width="200" height="100">
+</center>
+
+Resizing was by far the most difficult part to get right when building the website. It was only a problem I noticed about halfway into development. I noticed that for smaller screen sizes such as phones, the sidebar would not scale all the way down, leaving an awkward rectangle on the top half of the screen. The color of the background would also not fit the entire screen at certain widths and the scrollbar would popup inconsistently. All these different issues left me confused for hours on end. I first tackled the background so that the color would fill the entire screen which required styling the broader div container to have the same background color. In order to fix the inconsistent scrollbar, I revamped my width and height structure of all of the image and text content present on the screen so that it would always have max width between the borders of the viewing window. This one took a bit but I had eventually the right settings to make it flow seamlessly. Then came the sidebar, which took days to configure and dozens of iterations to ensure it would pull out right, have the buttons scaled and stay in its consistent position, style the text to give it some personality, and have it all not break when the screen became smaller. 
+
+Another problem I faced when diving into frontend with having minimal prior knowledge was the unspoken and untaught knowledge of having a neat and organized project structure. Knowing where to place files and where to install packages was a headache to get right as it was difficult to find an answer when my project was unqiue and so was everyone else's. Things quickly got cluttered and messy and moving files between folders became painful when the imports and components are all linked together. It took some time before the directories became natural and I could quickly naviagate through the project.
+
+<br/>
+<center>
+    <img src="/public/blogs/post1/structure.png" alt="Organized" width="200" height="1000">
+</center>
+
+Despite the excellent documentation provided by some of the tools I used, I still struggled to understand the necessity for some lines of code or the purpose of certain elements in a design. Using tools like Figma, daisyUI, Astro, or just basic HTML, JavaScript, and CSS, I would sometimes find myself roadblocked by alien syntax and keywords. These roadblocks led to hours of processing and studying documentation in order to understand what the code I'm looking at is trying to do. For example, learning all the different keywords of CSS and JavaScript in order to achieve the look and behavior I'm going for took many iterations to get just right. Or the way how variables are passed down through different components and how files are linked also created a steep learning curve I had to conquer. 
+
+# Conclusion #  
+In the end, I'm proud of what I was able to build in about a week. I believe I gained a solid fundamental understanding in for Astro, daisyUI, and even Markdown while also furthering my understanding in HTML, CSS, and JavaScript. I think this knowledge will definitely help in future frontends I may embark on and I'm excited for what I may build in the future. For now, there's still a lot to learn and discover.
+
+# More resources I found helpful for this project #
+1. &nbsp;&nbsp;&nbsp;&nbsp;- <a target="_blank" href="https://css-tricks.com/css-link-hover-effects/">CSS Hover Tricks</a>
+2. &nbsp;&nbsp;&nbsp;&nbsp;- <a target="_blank" href="https://daisyui.com/">daisyUI Documentation</a>
+3. &nbsp;&nbsp;&nbsp;&nbsp;- <a target="_blank" href="https://www.markdownguide.org/basic-syntax/#escaping-characters">Markdown Guide</a>
+4. &nbsp;&nbsp;&nbsp;&nbsp;- <a target="_blank" href="https://astro.build/themes/">Astro Themes</a>

@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContentBox from '../components/ContentBox.astro';
+import PortfolioWebsitePic from '/public/projects/portfolio-website.png';
+import youmecarPic from '/public/projects/youmecar.png';
+import manimPic from '/public/projects/manim.png';
 ---
 
 <BaseLayout title="Projects" sidebarActive="projects">
@@ -10,7 +13,7 @@ import ContentBox from '../components/ContentBox.astro';
 
 	<ContentBox
 	  title="Portfolio Website"
-	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+	  img={PortfolioWebsitePic}
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Astro", "HTML", "CSS"]}
@@ -19,7 +22,7 @@ import ContentBox from '../components/ContentBox.astro';
 	<div class="divider"></div>
 	<ContentBox
 	  title="youmecar"
-	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
+	  img={youmecarPic}
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Python", "React", "Firebase"]}
@@ -28,16 +31,16 @@ import ContentBox from '../components/ContentBox.astro';
 	<div class="divider"></div>
 	<ContentBox
 	  title="Manim Animation"
-	  img="/post_img.webp"
+	  img={manimPic}
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
-	  tags={["Python", "Manim Library", "Video Animation"]}
+	  tags={["Python", "Manim", "Animation"]}
 	  badgeTag=""
 	/>
 	<div class="divider"></div>
 	<ContentBox
 	  title="Physics Calculator Website"
-	  img="/post_img.webp"
+	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Python", "HTML", "CSS"]}
@@ -46,7 +49,7 @@ import ContentBox from '../components/ContentBox.astro';
 	<div class="divider"></div>
 	<ContentBox
 	  title="Evil Hangman"
-	  img="/post_img.webp"
+	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Java"]}
@@ -55,7 +58,7 @@ import ContentBox from '../components/ContentBox.astro';
 	<div class="divider"></div>
 	<ContentBox
 	  title="Codecademy Terminal RPG"
-	  img="/post_img.webp"
+	  img="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg?fit=696%2C463"
 	  desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	  url="#"
 	  tags={["Python"]}

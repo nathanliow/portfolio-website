@@ -9,16 +9,18 @@ const { title, img, desc, url, target = "_blank", tags, badgeTag } = Astro.props
 <div class="content-box">
     <a href={url} target={target}>
         <div class="content-contents">
-            { img && (
-                <Image
-                src={img}
-                width={750}
-                height={422}
-                format="webp"
-                alt={title}
-                class="content-image"
-                />
-            )}
+            <div class="image-container">
+                { img && (
+                    <Image
+                    src={img}
+                    width={750}
+                    height={422}
+                    format="png"
+                    alt={title}
+                    class="content-image"
+                    />
+                )}
+            </div>
             <div class="content-text">
                 <div class="content-title">
                     {title}
@@ -55,14 +57,19 @@ const { title, img, desc, url, target = "_blank", tags, badgeTag } = Astro.props
             flex-direction: row;
         }
     }
-    .content-image {
+    .image-container {
         width: 100%;
         max-width: 100%;
-        border-radius: 10px;
+        overflow: hidden;
 
         @media (min-width: 768px) {
             max-width: 208px;
         }
+    }
+    .content-image {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 100%;
     }
     .content-text {
         font-family: 'DM Sans Variable', sans-serif;
