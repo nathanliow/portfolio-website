@@ -2,7 +2,7 @@
 title: "Codecademy Terminal RPG"
 description: "wenfjkewn"
 heroImage: "/projects/terminal-rpg/hero.png"
-pubDate: "May 1 2023"
+pubDate: "June 1 2023"
 badge: ""
 tags: ["Python"]
 code: ""

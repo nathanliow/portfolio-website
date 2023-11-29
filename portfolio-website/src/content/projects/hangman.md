@@ -1,6 +1,9 @@
 ---
 title: "Evil Hangman"
-description: "wenfjkewn"
+description: "An altered version of the famous traditional game of Hangman. In this
+\"evil\" version, the chosen word to be guessed is undetermined for as long as possible
+until the player ultimately narrows the list of possible words to just a single word.
+This project was done as a school assignment so code cannot be published."
 heroImage: "/projects/hangman/hero.png"
 pubDate: "Sep 1 2023"
 badge: ""
@@ -11,7 +14,7 @@ blog: ""
 ---
 # Overview #
 An altered version of the famous traditional game of Hangman. In this "evil" version,
-the chosen word to be guessed is undetermined for as long as possible until the 
+the chosen word to be guessed is undetermined for as long as possible until the
 player ultimately narrows the list of possible words to just a single word. This project
 was done as a school assignment so code cannot be published.
 
@@ -20,7 +23,7 @@ This project was used to understand data structures such as lists, maps, and set
 
 # How it works #
 <center>
-    <img src="/projects/hangman/test.png" alt="Resizing being a pain" width="200" height="100">
+    <img src="/projects/hangman/test.png" alt="Word families in evil hangman" width="200" height="100">
 </center>
 
 The program uses a set of known English words or a dictionary. This dictionary determines
