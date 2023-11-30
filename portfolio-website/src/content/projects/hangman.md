@@ -87,7 +87,7 @@ implementing a Comparator class for the word families. If there were ties betwee
 having the same number of words, they were to be broken by least letters revealed and lexicographical ordering.
 
 # Full Tech Stack #  
-| Frameworks | Languages | Libraries | Tools      |
+|            | Languages |           | Tools      |
 | :--------- | :-------- | :-------- | :--------- |
 |            | - Java    |           | - Intellij |
 |            |           |           |            |

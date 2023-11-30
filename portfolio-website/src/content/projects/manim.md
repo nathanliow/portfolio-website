@@ -78,7 +78,7 @@ I'm hoping this video would help at least one person understand the niche subjec
 maybe more so to be inspired. 
 
 # Full Tech Stack #  
-| Frameworks | Languages | Libraries | Tools       |
+|  | Languages | Libraries | Tools       |
 | :--------- | :-------- | :-------- | :---------- |
 |            | - Python  | - Manim   | - Clipchamp |
 |            |           |           | - VSCode    |
