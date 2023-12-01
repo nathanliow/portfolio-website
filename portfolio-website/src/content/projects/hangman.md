@@ -1,9 +1,6 @@
 ---
 title: "Evil Hangman"
-description: "An altered version of the famous traditional game of Hangman. In this
-\"evil\" version, the chosen word to be guessed is undetermined for as long as possible
-until the player ultimately narrows the list of possible words to just a single word.
-This project was done as a school assignment so code cannot be published."
+description: "An altered version of the famous traditional game of Hangman."
 heroImage: "/projects/hangman/hero.png"
 pubDate: "Sep 1 2023"
 badge: ""

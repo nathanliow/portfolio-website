@@ -1,7 +1,7 @@
 ---
 title: "AP Physics Graphic Organizers"
 description: "Graphic organizers that I made during my junior and senior year of high school while I was 
-taking AP Physics, taught by the legendary Mr. Khan."
+taking AP Physics, taught by the legendary Mr. Khan. "
 heroImage: "/projects/physGO/hero.png"
 pubDate: "May 1 2023"
 badge: ""
@@ -19,7 +19,10 @@ blog: ""
 
 # Overview #
 Graphic organizers that I made during my junior and senior year of high school while I was taking 
-AP Physics, taught by the legendary Mr. Khan. 
+AP Physics, taught by the legendary Mr. Khan. They follow Collegeboard's physics curriculum and
+separated by units. Each unit has a fundamental part consisting of necessary vocab, then showcases
+every major concept with examples, cases, and scenarios. At the end of each unit are tips I found
+useful for problem-solving.
 
 # Purpose #
 These graphic organizers originally started out as a way to help my classmates, but it quickly 

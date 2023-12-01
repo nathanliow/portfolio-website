@@ -3,7 +3,7 @@ title: "youmecar"
 description: "wenfjkewn"
 heroImage: "/projects/youmecar/hero.png"
 pubDate: "Oct 1 2023"
-badge: ""
+badge: "IN PROGRESS"
 tags: ["Python", "React", "Firebase"]
 code: ""
 demo: ""

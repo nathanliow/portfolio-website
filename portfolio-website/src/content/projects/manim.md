@@ -1,8 +1,6 @@
 ---
 title: "Manim Animation"
-description: "A 3D animation of Ampere's Law as learned in my AP Physics C: Electricity and Magnetism class. 
-It uses a Python library called Manim (short for Math Animation), created by Grant Sanderson, which enables
-the rendering of complex scenes to model practically any math-related concept."
+description: "A 3D animation of Ampere's Law as learned in my AP Physics C: Electricity and Magnetism class."
 heroImage: "/projects/manim/hero.png"
 pubDate: "April 24 2023"
 badge: ""
@@ -78,7 +76,7 @@ I'm hoping this video would help at least one person understand the niche subjec
 maybe more so to be inspired. 
 
 # Full Tech Stack #  
-|  | Languages | Libraries | Tools       |
+|            | Languages | Libraries | Tools       |
 | :--------- | :-------- | :-------- | :---------- |
 |            | - Python  | - Manim   | - Clipchamp |
 |            |           |           | - VSCode    |

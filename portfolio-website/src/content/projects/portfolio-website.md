@@ -1,9 +1,7 @@
 ---
 title: "Portfolio Website"
 description: "A website displaying all the work that I'm proud to share with those willing to
-see. From small side projects to large collaborative efforts, this website includes
-it all. Most of the projects on here are technical but certainly doesn't exclude the 
-non-technical projects I've found passion and interest in."
+see."
 heroImage: "/projects/portfolio-website/hero.png"
 pubDate: "Nov 27 2023"
 badge: "NEW"

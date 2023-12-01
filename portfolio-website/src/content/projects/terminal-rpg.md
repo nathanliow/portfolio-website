@@ -1,7 +1,6 @@
 ---
 title: "Codecademy Terminal RPG"
-description: "A role-playing game (RPG) that's played on the terminal. This project was done as part of a 
-career path at Codecademy.com. This was taken in preparation over the summer for my data structures class. "
+description: "A role-playing game (RPG) that's played on the terminal."
 heroImage: "/projects/terminal-rpg/hero.png"
 pubDate: "June 1 2023"
 badge: ""
