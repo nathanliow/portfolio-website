@@ -24,7 +24,8 @@ together.
 Some common and practical applications of this web-app can be within school organizations,
 church groups, one-time events, and field trips.
 
-# How it was made #  
+# How it was made #
+<br/>
 <center>
     <img src="/projects/youmecar/initial.png" alt="The initial figma idea" width="400" height="200">
     <p class="caption">The initial figma idea I had in mind, months before HackTX 2023</p>
@@ -37,6 +38,7 @@ if there was more than one event going on, all of which requiring a separate rid
 idea never had the chance to leave the microcosm of my mind due to the busyness of school
 but I knew I wanted to do something about it.
 
+<br/>
 <center>
     <img src="/projects/youmecar/board.png" alt="Drawing board of app flow" width="400" height="200">
     <p class="caption">The drawing board of our app's flow</p>
@@ -51,6 +53,7 @@ necessary pages, we started styling the pages using Tailwind and linking them to
 We also integrated Firebase for database storage to store the logins of users and what 
 organizations, events, and cars they were in. 
 
+<br/>
 <center>
     <img src="/projects/youmecar/role.png" alt="Role selection page" width="400" height="200">
     <p class="caption">The role selection page</p>

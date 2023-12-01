@@ -33,6 +33,7 @@ me to reread all the notes in a detailed manner so that I could summarize and vi
 graphic organizer.
 
 # How it was made #
+<br/>
 <center>
     <img src="/projects/physGO/editor.png" alt="Screenshot preview editor" width="200" height="100">
     <p class="caption">Using Mac OS' screenshot preview editor</p>

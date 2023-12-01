@@ -19,6 +19,7 @@ was done as a school assignment so code cannot be published.
 This project was used to understand data structures such as lists, maps, and sets.
 
 # How it works #
+<br/>
 <center>
     <img src="/projects/hangman/test.png" alt="Word families in evil hangman" width="300" height="150">
     <p class="caption">Debugging the program by analyzing word families</p>

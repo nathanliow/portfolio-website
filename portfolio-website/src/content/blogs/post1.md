@@ -71,6 +71,7 @@ my project was unqiue and so was everyone else's. Things quickly got cluttered a
 files between folders became painful when the imports and components are all linked together. It took 
 some time before the directories became natural and I could quickly naviagate through the project.
 
+<br/>
 <center>
     <img src="/blogs/post1/structure.png" alt="Organized" width="200" height="1000">
     <p class="caption">Satisfying organization of files for this project</p>
