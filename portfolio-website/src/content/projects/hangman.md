@@ -20,7 +20,8 @@ This project was used to understand data structures such as lists, maps, and set
 
 # How it works #
 <center>
-    <img src="/projects/hangman/test.png" alt="Word families in evil hangman" width="200" height="100">
+    <img src="/projects/hangman/test.png" alt="Word families in evil hangman" width="300" height="150">
+    <p class="caption">Debugging the program by analyzing word families</p>
 </center>
 
 The program uses a set of known English words or a dictionary. This dictionary determines
@@ -33,15 +34,12 @@ groups of words that match the same character pattern. This information is store
 map, mapping a String (pattern) to an ArrayList of Strings (list of possible words). 
 An example of the word familiy of "_ a _" and "p _ _" is:
 
-_ a _ : (3 words)
-1. &nbsp;&nbsp;&nbsp;&nbsp;bar
-2. &nbsp;&nbsp;&nbsp;&nbsp;far  
-3. &nbsp;&nbsp;&nbsp;&nbsp;car  
-p _ _ : (4 words)
-1. &nbsp;&nbsp;&nbsp;&nbsp;put 
-2. &nbsp;&nbsp;&nbsp;&nbsp;par  
-3. &nbsp;&nbsp;&nbsp;&nbsp;poe
-4. &nbsp;&nbsp;&nbsp;&nbsp;pie
+| _ a _ : | p _ _ : |
+| :-----: | :-----: |
+| bar     | put     |
+| far     | par     |
+| car     | poe     |
+|         | pie     |
 
 Obviously, an actual word family would be dozens of words that match that pattern. With 
 these word families, we have a way of determining which word family is "harder" than another. 

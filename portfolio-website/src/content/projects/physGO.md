@@ -35,7 +35,8 @@ graphic organizer.
 # How it was made #
 <center>
     <img src="/projects/physGO/editor.png" alt="Screenshot preview editor" width="200" height="100">
-</center>  
+    <p class="caption">Using Mac OS' screenshot preview editor</p>
+</center>
 
 Using plain old Google Docs, everything was typed, formatted, and created to build the graphic 
 organizer. For pictures, they were created by taking a screenshot of some white space, and 

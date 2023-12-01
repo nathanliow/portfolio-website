@@ -47,6 +47,7 @@ Some of the hardest challenges of this project:
 <br/>
 <center>
     <img src="/blogs/post1/resize.png" alt="Resizing being a pain" width="200" height="100">
+    <p class="caption">The sidebar failing to be a sidebar on phone screen sizes</p>
 </center>
 
 Resizing was by far the most difficult part to get right when building the website. It was only a 
@@ -70,9 +71,9 @@ my project was unqiue and so was everyone else's. Things quickly got cluttered a
 files between folders became painful when the imports and components are all linked together. It took 
 some time before the directories became natural and I could quickly naviagate through the project.
 
-<br/>
 <center>
     <img src="/blogs/post1/structure.png" alt="Organized" width="200" height="1000">
+    <p class="caption">Satisfying organization of files for this project</p>
 </center>
 
 Despite the excellent documentation provided by some of the tools I used, I still struggled to 
