@@ -38,6 +38,24 @@ just with this website but with future websites I may create. Astro just came wi
 I needed, along with being easy to use and straight to the point. As someone who knew nothing 
 about frontend, I'd recommend giving Astro a try. 
 
+<br/>
+<center>
+    <img src="/blogs/post1/figma.png" alt="Website design on Figma" width="400" height="200" class="blog-img">
+    <p class="caption">Designing the website on Figma</p>
+</center>  
+
+The process of building the website began with designing my website on Figma. Then it went to 
+hours of reading Astro documentation and understanding how to use Astro in my project. I started
+building my first Astro component, which was the Content Box that houses the information of a 
+blog or project. This consisted of a picture, a title, a description, a badge, and a group of tags. It took some time to create and piece together smaller components that I realized I had to make such
+as each individual tag but the Content Box component wasn't much trouble.  
+
+From there, I moved onto making the Sidebar which took many more hours of styling and adjusting to get right. It was at this point I had discovered daisyUI to help make the drawer sidebar which made life a bit easier. Then I went to styling entire pages and smaller components such as the Navigation
+Bar. I integrated some color and text as well as gradients to spice up the website a little.
+
+After some polishing, I began writing documentation for the past projects that I wanted to feature
+on the website and now, the website has been published on to Netlify for the world to see.
+
 # Some challenges about this project #
 Some of the hardest challenges of this project:
 1. &nbsp;&nbsp;&nbsp;&nbsp;1\. Making resizing natural so it flows and works smoothly on all devices.
