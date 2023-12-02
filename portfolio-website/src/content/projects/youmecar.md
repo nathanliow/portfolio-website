@@ -27,7 +27,7 @@ church groups, one-time events, and field trips.
 # How it was made #
 <br/>
 <center>
-    <img src="/projects/youmecar/initial.png" alt="The initial figma idea" width="400" height="200">
+    <img src="/projects/youmecar/initial.png" alt="The initial figma idea" width="400" height="200" class="blog-img">
     <p class="caption">The initial figma idea I had in mind, months before HackTX 2023</p>
 </center>
 
@@ -40,7 +40,7 @@ but I knew I wanted to do something about it.
 
 <br/>
 <center>
-    <img src="/projects/youmecar/board.png" alt="Drawing board of app flow" width="400" height="200">
+    <img src="/projects/youmecar/board.png" alt="Drawing board of app flow" width="400" height="200" class="blog-img">
     <p class="caption">The drawing board of our app's flow</p>
 </center>
 
@@ -55,7 +55,7 @@ organizations, events, and cars they were in.
 
 <br/>
 <center>
-    <img src="/projects/youmecar/role.png" alt="Role selection page" width="400" height="200">
+    <img src="/projects/youmecar/role.png" alt="Role selection page" width="400" height="200" class="blog-img">
     <p class="caption">The role selection page</p>
 </center>
 
@@ -92,7 +92,7 @@ one person can sign up a group a people.
 
 The overarching goal and barrier to this project is: **how can we make this better and easier than
 a Google Sheet.** After all, that is what we are trying to replace and automate. That is the vision
-our team is trying to hold as we work towards an MVP and eventually a polsihed product for practical
+our team is trying to hold as we work towards an MVP and eventually a polished product for practical
 use. 
 
 # Impact #

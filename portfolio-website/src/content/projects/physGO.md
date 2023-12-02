@@ -35,7 +35,7 @@ graphic organizer.
 # How it was made #
 <br/>
 <center>
-    <img src="/projects/physGO/editor.png" alt="Screenshot preview editor" width="200" height="100">
+    <img src="/projects/physGO/editor.png" alt="Screenshot preview editor" width="200" height="100" class="blog-img">
     <p class="caption">Using Mac OS' screenshot preview editor</p>
 </center>
 

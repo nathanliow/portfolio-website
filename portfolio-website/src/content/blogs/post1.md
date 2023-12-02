@@ -46,7 +46,7 @@ Some of the hardest challenges of this project:
 
 <br/>
 <center>
-    <img src="/blogs/post1/resize.png" alt="Resizing being a pain" width="200" height="100">
+    <img src="/blogs/post1/resize.png" alt="Resizing being a pain" width="200" height="100" class="blog-img">
     <p class="caption">The sidebar failing to be a sidebar on phone screen sizes</p>
 </center>
 
@@ -73,7 +73,7 @@ some time before the directories became natural and I could quickly naviagate th
 
 <br/>
 <center>
-    <img src="/blogs/post1/structure.png" alt="Organized" width="200" height="1000">
+    <img src="/blogs/post1/structure.png" alt="Organized" width="200" height="1000" class="blog-img">
     <p class="caption">Satisfying organization of files for this project</p>
 </center>
 

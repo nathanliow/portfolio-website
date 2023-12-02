@@ -1,16 +1,64 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import * as AboutMe from '../pages/about-me/about-me.md';
 ---
-
 <BaseLayout title="Nathan Liow" sidebarActive="about-me">
-  
-	<div>
-		<div class="text-3xl w-full font-bold mb-5 mt-10">About Me</div>
+	<div class="title">
+		<div class="title-text">{AboutMe.frontmatter.title}</div>
 	</div>
-
+	<div class="content-text">
+		<AboutMe.Content/>
+	</div>
 </BaseLayout>
 
+<style is:global>
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    a {
+        color: #9E51B8;
+        transition: all 0.15s ease-in-out;
+    }
+    a:hover {
+        color: #00BCF0;
+    }
+    table {
+        width: 100%;
+    }
+    .blog-img {
+        border-radius: 20px;
+    }
+    .caption {
+        color: #b5b5b5;
+        font-size: 12px;
+        font-weight: light;
+    }
+</style>
+
 <style>
+	.title {
+		margin-bottom: 15px;
+	}
+	.title-text {
+		color: #E8E8E8;
+		font-size: 30px;
+		width: 100%;
+		font-weight: bold;
+	}
+	.content-text {
+        font-size: 16px;
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+	}
 	.divider {
 		margin-top: 25px;
 		margin-bottom: 25px;
