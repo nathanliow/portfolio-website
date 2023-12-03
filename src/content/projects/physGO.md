@@ -9,11 +9,11 @@ code: ""
 demo: ""
 blog: ""
 ---
-<a target="_blank" href="/public/projects/physGO/phys1.pdf" download>AP Physics 1 Graphic Organizer (PDF)</a>
+<a target="_blank" href="/dist/projects/physGO/phys1.pdf" download>AP Physics 1 Graphic Organizer (PDF)</a>
 <br/>
-<a target="_blank" href="/public/projects/physGO/physCM.pdf" download>AP Physics C: Mechanics Graphic Organizer (PDF)</a>
+<a target="_blank" href="/dist/projects/physGO/physCM.pdf" download>AP Physics C: Mechanics Graphic Organizer (PDF)</a>
 <br/>
-<a target="_blank" href="/public/projects/physGO/physCE.pdf" download>AP Physics C: Electricity & Magnetism Graphic Organizer (PDF)</a>
+<a target="_blank" href="/dist/projects/physGO/physCE.pdf" download>AP Physics C: Electricity & Magnetism Graphic Organizer (PDF)</a>
 <br/>
 
 # Overview #
