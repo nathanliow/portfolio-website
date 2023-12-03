@@ -1,7 +1,6 @@
 ---
 title: "AP Physics Graphic Organizers"
-description: "Graphic organizers that I made during my junior and senior year of high school while I was 
-taking AP Physics, taught by the legendary Mr. Khan. "
+description: "Graphic organizers that I made during my junior and senior year of high school while I was taking AP Physics, taught by the legendary Mr. Khan. "
 heroImage: "/projects/physGO/hero.png"
 pubDate: "May 1 2023"
 badge: ""

@@ -184,6 +184,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "projects": {
+"drone-italy2023.md": {
+	id: "drone-italy2023.md";
+  slug: "drone-italy2023";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
 "hangman.md": {
 	id: "hangman.md";
   slug: "hangman";
