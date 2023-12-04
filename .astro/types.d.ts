@@ -182,6 +182,20 @@ declare module 'astro:content' {
   collection: "blogs";
   data: InferEntrySchema<"blogs">
 } & { render(): Render[".md"] };
+"post2.md": {
+	id: "post2.md";
+  slug: "post2";
+  body: string;
+  collection: "blogs";
+  data: InferEntrySchema<"blogs">
+} & { render(): Render[".md"] };
+"post3.md": {
+	id: "post3.md";
+  slug: "post3";
+  body: string;
+  collection: "blogs";
+  data: InferEntrySchema<"blogs">
+} & { render(): Render[".md"] };
 };
 "projects": {
 "drone-italy2023.md": {
