@@ -5,7 +5,7 @@ I'm currently a freshman (Class of 2027) taking Computer Science at The Universi
 I'm interested in full stack software development, Artificial Intelligence, Machine Learning, 
 cryptocurrencies, and Blockchain technology.
 
-<a target="_blank" href="public/about-me/Technical Resume.pdf" download>Technical Resume</a>
+<a target="_blank" href="dist/about-me/Technical Resume.pdf" download>Technical Resume</a>
  
 # Relevant courses I'm taking #
 | **Fall 2023**                             | **Spring 2024**                                 | 
