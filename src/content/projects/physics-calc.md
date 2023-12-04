@@ -10,7 +10,6 @@ code: ""
 demo: "https://liowapps.pythonanywhere.com/"
 blog: ""
 ---
-
 _Note: pythonanywhere.com only supports website hosting for 3 months at a time so the
 demo may not be live at all times._  
 _Last reloaded: December 1st, 2023_  

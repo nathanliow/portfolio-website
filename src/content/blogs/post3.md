@@ -8,7 +8,6 @@ badge: "NEW"
 tags: ["Academics"]
 updatedDate: ""
 ---
-
 # My thoughts #
 
 # What we covered #

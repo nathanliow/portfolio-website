@@ -9,7 +9,6 @@ badge: "NEW"
 tags: ["Astro", "Portfolio Website"]
 updatedDate: "Nov 28 2023"
 ---
-
 # How it began #
 I wanted to create something that was personal and uniquely mine. It also felt like I had finally 
 enough projects to display for the world to see. It was like a weird attachment to the idea of 
