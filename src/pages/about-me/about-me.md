@@ -1,12 +1,8 @@
 ---
 title: "Hey! I'm Nathan Liow!"
----
-I'm currently a freshman (Class of 2027) taking Computer Science at The University of Texas at Austin.
-I'm interested in full stack software development, Artificial Intelligence, Machine Learning, 
-cryptocurrencies, and Blockchain technology.
+--- 
+<br/>
 
-<a target="_blank" href="/about-me/techresume.pdf" download="Technical Resume">Technical Resume</a>
- 
 # Relevant courses I'm taking #
 | **Fall 2023**                             | **Spring 2024**                                 | 
 | :---------------------------------------- | :---------------------------------------------- |

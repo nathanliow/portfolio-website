@@ -10,6 +10,7 @@ updatedDate: ""
 ---
 # My thoughts #
 
+
 # What we covered #
 
 # Hardest concepts in the class #

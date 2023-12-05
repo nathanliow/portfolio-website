@@ -59,8 +59,31 @@ Quicksort, Radix Sort
 
 # Hardest concepts in the class #
 1. &nbsp;&nbsp;&nbsp;&nbsp;1\. Recursive Backtracking
-2. &nbsp;&nbsp;&nbsp;&nbsp;2\. Rarely used concepts such as Abstract Classes (in my experience)
-3. &nbsp;&nbsp;&nbsp;&nbsp;3\. Huffman's Compression Algorithm
+2. &nbsp;&nbsp;&nbsp;&nbsp;2\. Huffman's Compression Algorithm
+3. &nbsp;&nbsp;&nbsp;&nbsp;3\. Conditional and dependent loop Big-O
+
+I found recursive backtracking hard to understand because of the sheer amount of things you need
+to take care of. The idea is to try different options to see if they lead to the desire outcome
+but to "backtrack" if they lead to a dead end, similar to a maze. The idea is to have a base case,
+like any recursion algorithm. Then the recursive step includes looping through the different choices
+that the algorithm can take, for example, going up, down, left, or right in a maze. Then you need
+to make that choice, either by marking it as visited or updating a variable. Then you compare that 
+result with a recursive call and finally, undo the choice so that it can be potentially done at a later
+step by a whole different recursive branch. The most difficult part about this was that the problems
+and solutions could vary widely so there was no general solution beyond the very vague guideline I listed.
+
+Huffman's compression algorithm was also difficult to understand because I found it to be quite extensive.
+In class, we implemented Huffman's algorithm using an array to count frequencies, a priority queue to store
+values and their frequencies, and then we created a curated Huffman binary tree. Then there were more steps
+to encode, compress, and write the data bit-by-bit. After working on the assignment and actually implementing
+it myself, it became easier to understand however.
+
+Conditionals and dependent loops were a specific case of Big-O problems I encountered during the course and I
+found them to trip me up occasionally. These problems weren't necessary difficult to understand, but rather
+a contrasting pattern to calculating the Big-O for the algorithms we were given. For example, an outside loop
+containing a dependent loop would usually be O(n^2) but if the dependent loop was exponential, the entire
+algorithm would be O(n) rather than O(nlogn) or something similar. I found this to simply be a trial of 
+pattern matching and knowing the different types of dependent loops I might seee in the course and exams.
 
 <br/>
 

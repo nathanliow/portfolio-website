@@ -12,12 +12,12 @@ const { title, img, desc, url, target = "_blank", tags, badgeTag } = Astro.props
             <div class="image-container">
                 { img && (
                     <Image
-                    src={img}
-                    width={750}
-                    height={422}
-                    format="png"
-                    alt={title}
-                    class="content-image"
+                        src={img}
+                        width={750}
+                        height={422}
+                        format="png"
+                        alt={title}
+                        class="content-image"
                     />
                 )}
             </div>
