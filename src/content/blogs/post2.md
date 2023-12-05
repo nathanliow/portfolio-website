@@ -84,7 +84,6 @@ a contrasting pattern to calculating the Big-O for the algorithms we were given.
 containing a dependent loop would usually be O(n^2) but if the dependent loop was exponential, the entire
 algorithm would be O(n) rather than O(nlogn) or something similar. I found this to simply be a trial of 
 pattern matching and knowing the different types of dependent loops I might seee in the course and exams.
-
 <br/>
 
 # Conclusion #
