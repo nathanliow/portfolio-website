@@ -1,8 +1,10 @@
 ## Website
-Check out my [portfolio website](https://nathanliow.netlify.app/)
+Check out my [portfolio website](https://nathanliow.netlify.app/)!
+
+Look at my [blog post](https://nathanliow.netlify.app/blogs/post1/) on how I made it!
+
 
 ## Commands
-
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
@@ -13,6 +15,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
