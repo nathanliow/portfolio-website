@@ -35,25 +35,25 @@ Data structures are **bolded** and ideas presented are in more-or-less chronolog
 3. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Syntax, Encapsulation, Inheritance, 
 Polymorphism, Generics, Iterators
 4. &nbsp;&nbsp;&nbsp;&nbsp;- Interfaces
-4. &nbsp;&nbsp;&nbsp;&nbsp;- Abstract Classes
-4. &nbsp;&nbsp;&nbsp;&nbsp;- **Lists** (ArrayLists, Linked-Lists)
-5. &nbsp;&nbsp;&nbsp;&nbsp;- **Maps**
-6. &nbsp;&nbsp;&nbsp;&nbsp;- Recursion and Recursive Backtracking
-7. &nbsp;&nbsp;&nbsp;&nbsp;- Searching and Sorting
-8. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Linear, Selection, Insertion, Mergesort, 
+5. &nbsp;&nbsp;&nbsp;&nbsp;- Abstract Classes
+6. &nbsp;&nbsp;&nbsp;&nbsp;- **Lists** (ArrayLists, Linked-Lists)
+7. &nbsp;&nbsp;&nbsp;&nbsp;- **Maps**
+8. &nbsp;&nbsp;&nbsp;&nbsp;- Recursion and Recursive Backtracking
+9. &nbsp;&nbsp;&nbsp;&nbsp;- Searching and Sorting
+10. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Linear, Selection, Insertion, Mergesort, 
 Quicksort, Radix Sort
-9. &nbsp;&nbsp;&nbsp;&nbsp;- **Stacks**
-10. &nbsp;&nbsp;&nbsp;&nbsp;- **Queues** (and Priority Queues)
-11. &nbsp;&nbsp;&nbsp;&nbsp;- **Binary Trees**
-12. &nbsp;&nbsp;&nbsp;&nbsp;- **Binary Search Trees**
-13. &nbsp;&nbsp;&nbsp;&nbsp;- **Red Black Trees**
-14. &nbsp;&nbsp;&nbsp;&nbsp;- Huffman Coding (Compression Algorithm)
-15. &nbsp;&nbsp;&nbsp;&nbsp;- **Graphs**
-16. &nbsp;&nbsp;&nbsp;&nbsp;- **Hash Tables**
-17. &nbsp;&nbsp;&nbsp;&nbsp;- **Tries**
-18. &nbsp;&nbsp;&nbsp;&nbsp;- **Heaps**
-19. &nbsp;&nbsp;&nbsp;&nbsp;- Dynamic Programming
-20. &nbsp;&nbsp;&nbsp;&nbsp;- Functional Programming  
+11. &nbsp;&nbsp;&nbsp;&nbsp;- **Stacks**
+12. &nbsp;&nbsp;&nbsp;&nbsp;- **Queues** (and Priority Queues)
+13. &nbsp;&nbsp;&nbsp;&nbsp;- **Binary Trees**
+14. &nbsp;&nbsp;&nbsp;&nbsp;- **Binary Search Trees**
+15. &nbsp;&nbsp;&nbsp;&nbsp;- **Red Black Trees**
+16. &nbsp;&nbsp;&nbsp;&nbsp;- Huffman Coding (Compression Algorithm)
+17. &nbsp;&nbsp;&nbsp;&nbsp;- **Graphs**
+18. &nbsp;&nbsp;&nbsp;&nbsp;- **Hash Tables**
+19. &nbsp;&nbsp;&nbsp;&nbsp;- **Tries**
+20. &nbsp;&nbsp;&nbsp;&nbsp;- **Heaps**
+21. &nbsp;&nbsp;&nbsp;&nbsp;- Dynamic Programming
+22. &nbsp;&nbsp;&nbsp;&nbsp;- Functional Programming  
 
 <br/>
 
