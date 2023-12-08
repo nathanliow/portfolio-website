@@ -5,7 +5,7 @@ to simply throw myself into the deepend. Definitely encountered many
 struggles but determination has brought me far."
 pubDate: "Nov 27 2023"
 heroImage: "/blogs/post1/hero.png"
-badge: "NEW"
+badge: ""
 tags: ["Astro", "Portfolio Website"]
 updatedDate: "Nov 28 2023"
 ---
