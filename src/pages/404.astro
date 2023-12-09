@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>404: Page Not Found!</title>
+	</head>
+	<body class="background">
+        <div class="main-content">
+            <div class="text">
+                Oops, this page doesn't exist!
+            <div>
+            <br/>
+            <br/>
+            <a href="/" class="source">
+                <div class="source-text">
+                    Back to homepage!
+                </div>
+            </a>
+        </div>
+    </body>
+</html>
+
+<style is:global>
+	.background {
+		background-color: #15171E;
+		min-height: 100vh;
+	}
+    .main-content {
+        text-align: center;
+		background-color: #15171E;
+		display: flex;
+		justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-size: 18px;
+        font-family: 'DM Sans Variable', sans-serif;
+        color: #E8E8E8;
+	}
+    .source {
+        display: flex;
+        justify-content: center;
+        padding-top: 7px; 
+        padding-bottom: 7px; 
+        padding-left: 15px;
+        padding-right: 15px;
+        height: max-content;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-image: linear-gradient(#1C1E25, #1C1E25), linear-gradient(45deg, #9E51B8, #4D88D5 70%, #00BCF0);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        transition: all 0.15s ease-in-out;
+    }
+    .source:hover {
+        background-image: linear-gradient(45deg, #9E51B8, #4D88D5 70%, #00BCF0), linear-gradient(45deg, #9E51B8, #4D88D5 70%, #00BCF0);
+        transform: scale(1.05);
+    }
+</style>
