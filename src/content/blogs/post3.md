@@ -1,7 +1,7 @@
 ---
 title: "Learning CS311: Discrete Math"
-description: "My experience and thoughts regarding CS311:
-Discrete Math taught at The University of Texas at Austin."
+description: "My experience and thoughts regarding CS311: Discrete Math, taught at 
+The University of Texas at Austin."
 pubDate: "Dec 3 2023"
 heroImage: "/blogs/post3/hero.png"
 badge: "NEW"

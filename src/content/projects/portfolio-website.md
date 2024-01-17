@@ -4,7 +4,7 @@ description: "A website displaying all the work that I'm proud to share with tho
 see."
 heroImage: "/projects/portfolio-website/hero.png"
 pubDate: "Nov 27 2023"
-badge: "NEW"
+badge: ""
 tags: ["Astro", "HTML", "CSS", "JavaScript"]
 code: "https://github.com/nathanliow/portfolio-website"
 demo: ""

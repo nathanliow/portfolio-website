@@ -4,7 +4,7 @@ description: "A ride sharing web application that facilitates event organization
 for different organizing entities from clubs to church groups."
 heroImage: "/projects/youmecar/hero.png"
 pubDate: "Oct 1 2023"
-badge: "IN PROGRESS"
+badge: ""
 tags: ["Python", "React", "Firebase"]
 code: "https://github.com/txst54/youmecar"
 demo: ""

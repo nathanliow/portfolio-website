@@ -4,7 +4,7 @@ description: "My experience and thoughts regarding CS314: Data Structures taught
 The University of Texas at Austin."
 pubDate: "Dec 2 2023"
 heroImage: "/blogs/post2/hero.png"
-badge: "NEW"
+badge: ""
 tags: ["Academics"]
 updatedDate: "Dec 4 2023"
 ---
