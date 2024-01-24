@@ -1,11 +1,11 @@
 ---
 title: "Current Web3"
 description: "There's only going to be more opportunities..."
-pubDate: "Jan 23 2023"
+pubDate: "Jan 23 2024"
 heroImage: "/blogs/post4/hero.png"
 badge: "NEW"
 tags: ["Web3"]
-updatedDate: "Jan 23 2023"
+updatedDate: "Jan 23 2024"
 ---
 # Background #
 This past December was my first winter break from college and I spent a good chunk of it learning
