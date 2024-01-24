@@ -5,7 +5,7 @@ pubDate: "Jan 23 2023"
 heroImage: "/blogs/post4/hero.png"
 badge: "NEW"
 tags: ["Web3"]
-updatedDate: ""
+updatedDate: "Jan 23 2023"
 ---
 # Background #
 This past December was my first winter break from college and I spent a good chunk of it learning
