@@ -6,7 +6,8 @@ title: ""
 | :---------------------------------------- | :---------------------------------------------- |
 | - CS314: Data Structures                  | - CS429: Computer Organization and Architecture |
 | - CS311: Discrete Math                    | - SDS321: Intro to Probability & Statistics     |
-| - M408D: Calculus 2 & 3                   |                                                 |
+| - M408D: Calculus 2 & 3                   | - CS309: FRI - Geometry of Space                |
+|                                           |                                                 |
 | **Fall 2024**                             | **Spring 2025**                                 | 
 | - CS439: Operating Systems                | - CS331: Algorithms and Complexity              |
 | - M340L: Matrices and Matrix Calculations |                                                 |

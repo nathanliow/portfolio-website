@@ -21,11 +21,11 @@ The purpose of Swoosh is to make it easier for friends, coworkers, or family to 
 
 A challenge we faced when building Swoosh was connecting to the different APIs and SDKs required for the app to work. An example was connecting to the thirdweb account abstraction SDK and having the buttons to open a modal made by thirdweb work properly. As we were working on our project, the button to allow the user to sign up with Google, Apple, or Facebook started erroring out when it was pressed, ultimately crashing the application for that user. This was nearing the end of the BUIDL hackathon which was rather upsetting to see as we weren't able to find a solution before submissions were closed. Despite this, we were still able to showcase the main funcitonality of our app to different companies and panels with no problem.
 
-Another challenge we faced was the lack of clear and concise documentation for developers that were completely new to the ecosystem or its tools. We found this to be a common problem among most SDKs as naturally, these products are constantly changing and documentation often lags far behind to match the current state of the product. This made it hard to use some new tools that we were using to build our app and led to constant trial and error in order to get adequate integration.
+Another challenge we faced was the lack of clear and concise documentation for developers that were completely new to the ecosystem or its tools. We found this to be a common problem among most SDKs as naturally, these products are constantly changing and documentation often lags far behind to match the current state of the product. This made it hard to use some new tools that we were using to build our app and led to constant trial and error in order to get adequate integration.  
 
 # Prizes #
 - Best Solana DeFi/Payments Integration (<a target="_blank" href="https://twitter.com/solana_devs/status/1769766724411232680?t=9CzhNLP6RssQFRWgDHxRdg">Twitter Post</a>)
-- Most creative BUIDL using XDC network 
+- Most creative BUIDL using XDC network  
 
 # Full Tech Stack #  
 | Languages    | Libraries      | Tools     | Chains              |
