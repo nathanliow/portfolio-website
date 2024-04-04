@@ -3,7 +3,7 @@ title: "Current Web3"
 description: "There's only going to be more opportunities..."
 pubDate: "Jan 23 2024"
 heroImage: "/blogs/post4/hero.png"
-badge: "NEW"
+badge: ""
 tags: ["Web3"]
 updatedDate: "Jan 23 2024"
 ---

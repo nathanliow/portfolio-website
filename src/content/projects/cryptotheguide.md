@@ -3,7 +3,7 @@ title: "Crypto The Guide"
 description: "A guide to the Web 3 universe."
 heroImage: "/projects/cryptotheguide/hero.png"
 pubDate: "Dec 22 2023"
-badge: "NEW"
+badge: ""
 tags: ["Web3"]
 code: ""
 demo: "https://www.cryptotheguide.com/"
