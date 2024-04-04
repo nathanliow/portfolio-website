@@ -27,6 +27,7 @@ Another challenge we faced was the lack of clear and concise documentation for d
 - Best Solana DeFi/Payments Integration (<a target="_blank" href="https://twitter.com/solana_devs/status/1769766724411232680?t=9CzhNLP6RssQFRWgDHxRdg">Twitter Post</a>)
 - Most creative BUIDL using XDC network  
 
+
 # Full Tech Stack #  
 | Languages    | Libraries      | Tools     | Chains              |
 | :----------- | :------------- | :-------- | :------------------ | 
