@@ -9,8 +9,6 @@ code: ""
 demo: ""
 blog: ""
 ---
-# Still working and testing to launch MVP in coming weeks (July 8, 2024) #
-
 # Overview #
 A platform to officiate on-chain trading competitions to provide a new and fun aspect to "degening" and trading. The competition will have a jackpot that is funded by an entry fee which will then be distributed to the winners. The winner is decided by the wallet or wallets that have the highest cumulative PNL percentage, accounting for both realized and unrealized gains. 
 
