@@ -1,7 +1,8 @@
 ---
-title: "arena.fun"
-description: "A platform to make trading on-chain competitive and fun."
-heroImage: "/projects/arenadotfun/hero.png"
+title: "TrenchTown.fun"
+description: "A platform to make trading on-chain competitive and fun. Pivoted to 
+portfolio tracking on Solana."
+heroImage: "/projects/trenchtown/hero.png"
 pubDate: "July 8 2024"
 badge: "BUILDING"
 tags: ["Web3", "Typescript", "Firebase"]

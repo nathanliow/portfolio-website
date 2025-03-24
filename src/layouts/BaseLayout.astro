@@ -1,8 +1,7 @@
 ---
-import Sidebar from '../components/Sidebar.astro';
-import Header from '../components/Header.astro';
+import { Icon } from 'astro-icon/components'
 
-const { title, includeSidebar = true, sidebarActive } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -15,58 +14,90 @@ const { title, includeSidebar = true, sidebarActive } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="background">
-		<div class="drawer lg:drawer-open">
-			<input id="sidebar-toggle" type="checkbox" class="drawer-toggle"/>
-			<div class="drawer-content background">
-				<Header/>
-				<div class="flex background">
-					<div class="gradient-rectangle"></div>
-					<div class="main-content">
-						<main>
-							<slot />
-						</main>
+		<div class="background">
+			<div class="main-content">
+				<div class="navbar">
+					<div class="navbar-logo">
+							<a href="/" class="logo-text">Nathan Liow</a>
+					</div>
+					
+					<div class="navbar-links">
+							<a href="/#projects" class="nav-link">Projects</a>
+					</div>
+					<div class="navbar-social">
+							<a href="https://github.com/nathanliow" target="_blank" class="social-link">
+									<Icon name="mdi:github" />
+							</a>
+							<a href="mailto:nathanliow7456@gmail.com" class="social-link">
+									<Icon name="mdi:email" />
+							</a>
+							<a href="https://linkedin.com/in/nathanliow" target="_blank" class="social-link">
+									<Icon name="mdi:linkedin" />
+							</a>
 					</div>
 				</div>
+				<main>
+					<slot />
+				</main>
 			</div>
-		  	{includeSidebar && <Sidebar sidebarActive={sidebarActive} />}
 		</div>
 	  </body>
 </html>
 
 <style is:global>
 	.background {
-		background-color: #15171E;
+		background-color: #F9F6F0;
 		min-height: 100vh;
 	}
 	.main-content {
-		background-color: #15171E;
+		background-color: #F9F6F0;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		padding-left: 50px;
 		padding-right: 50px;
-		padding-top: 100px;
+		padding-top: 25px;
 		min-width: 485px;
 
 		@media (max-width: 1024px) {
 			padding-top: 50px;
-        }
+		}
 	}
-	.gradient-rectangle {
+	/* Navbar Styles */
+	.navbar {
 		display: flex;
-		width: 5px; 
-		min-height: 100%;
-		height: auto;
-		border-radius: 20px;
-		margin-top: 100px;
-		margin-bottom: 100px;
-		margin-left: 100px;
-		background: linear-gradient(to bottom, #00BCF0, #5781D1 50%,#9E51B8);
-		transition: all 0.2s ease-in-out;
-    
-		@media (max-width: 1224px) {
-			width: 0px; 
-			height: 0px;
-			margin-left: 0px;
-        }
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #e0e0e0;
+	}
+	.navbar-logo {
+		font-size: 24px;
+		font-weight: bold;
+		min-width: 140px;
+	}
+	.logo-text {
+		color: #6f5b3e;
+		text-decoration: none;
+	}
+	.navbar-social {
+		min-width: 140px;
+		display: flex;
+		gap: 20px;
+		font-size: 24px;
+	}
+	.navbar-links {
+		display: flex;
+		justify-content: center;
+		min-width: 140px;
+	}
+	.nav-link {
+		color: #6f5b3e;
+		text-decoration: none;
+		font-size: 18px;
+		transition: color 0.2s ease;
+	}
+	.nav-link:hover {
+		color: #c4ae78;
 	}
 </style>

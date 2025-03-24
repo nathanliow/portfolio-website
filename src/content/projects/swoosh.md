@@ -1,8 +1,8 @@
 ---
-title: "Swoosh - ETHDenver Project"
+title: "Swoosh - ETHDenver 2024"
 description: "Swoosh is a decentralized payment and bill splitting application built on Ethereum. It allows users to easily send payments, request money from others, and split expenses using crypto. Made during ETHDenver's BUIDL Hackathon."
 heroImage: "/projects/swoosh/hero.png"
-pubDate: "Apr 1 2024"
+pubDate: "Mar 1 2024"
 badge: ""
 tags: ["Web3", "Solidity"]
 code: "https://github.com/sreeduggirala/swoosh"

@@ -1,9 +1,6 @@
 ## Website
 Check out my [portfolio website](https://nathanliow.netlify.app/)!
 
-Look at my [blog post](https://nathanliow.netlify.app/blogs/post1/) on how I made it!
-
-
 ## Commands
 All commands are run from the root of the project, from a terminal:
 

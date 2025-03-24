@@ -1,6 +1,6 @@
 ---
 title: "AP Physics Graphic Organizers"
-description: "Graphic organizers that I made during my junior and senior year of high school while I was taking AP Physics, taught by the legendary Mr. Khan. "
+description: "Graphic organizers that I made during my junior and senior year of high school while I was taking AP Physics."
 heroImage: "/projects/physGO/hero.png"
 pubDate: "May 1 2023"
 badge: ""
@@ -17,8 +17,7 @@ blog: ""
 <br/>
 
 # Overview #
-Graphic organizers that I made during my junior and senior year of high school while I was taking 
-AP Physics, taught by the legendary Mr. Khan. They follow Collegeboard's physics curriculum and
+Graphic organizers that I made during my junior and senior year of high school while I was taking AP Physics. They follow Collegeboard's physics curriculum and
 separated by units. Each unit has a fundamental part consisting of necessary vocab, then showcases
 every major concept with examples, cases, and scenarios. At the end of each unit are tips I found
 useful for problem-solving.
@@ -58,7 +57,7 @@ as this project was being worked on over the course of a year and Google Docs un
 CSS. With enough time and effort, I eventually ironed out some of the bigger formatting discrepancies and overall, 
 I believe the consistentcy is at a level where most people wouldn't mind.
 
-Formatting on Google Docs was also a pain, almost like a thorn in my side. A single page could only allow so much
+Formatting on Google Docs was also a pain. A single page could only allow so much
 information as it had to be legible and the aligning of text and pictures don't easily snap into a satisfying
 grid. Some of these drawbacks made it difficult to maintain consistency and formatting ultimately became a
 larger problem than actually studying the physics I was summarizing. 

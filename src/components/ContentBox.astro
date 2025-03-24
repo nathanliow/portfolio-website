@@ -1,5 +1,4 @@
 ---
-import TagGroup from './TagGroup.astro';
 import Badge from './Badge.astro';
 import { Image } from "astro:assets";
 import '@fontsource-variable/dm-sans';
@@ -31,7 +30,6 @@ const { title, img, desc, url, target = "_blank", tags, badgeTag } = Astro.props
                 <div class="content-desc">
                     {desc}
                 </div>
-                <TagGroup tags={tags}/>
             </div>
         </div>
     </a>

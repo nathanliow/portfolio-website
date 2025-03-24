@@ -174,44 +174,93 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blogs": {
-"post1.md": {
-	id: "post1.md";
-  slug: "post1";
+		"archive": {
+"about-me.md": {
+	id: "about-me.md";
+  slug: "about-me";
   body: string;
-  collection: "blogs";
-  data: InferEntrySchema<"blogs">
+  collection: "archive";
+  data: any
 } & { render(): Render[".md"] };
-"post2.md": {
-	id: "post2.md";
-  slug: "post2";
+"cryptotheguide.md": {
+	id: "cryptotheguide.md";
+  slug: "cryptotheguide";
   body: string;
-  collection: "blogs";
-  data: InferEntrySchema<"blogs">
+  collection: "archive";
+  data: any
 } & { render(): Render[".md"] };
-"post3.md": {
-	id: "post3.md";
-  slug: "post3";
-  body: string;
-  collection: "blogs";
-  data: InferEntrySchema<"blogs">
-} & { render(): Render[".md"] };
-};
-"projects": {
 "drone-italy2023.md": {
 	id: "drone-italy2023.md";
   slug: "drone-italy2023";
   body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
+  collection: "archive";
+  data: any
 } & { render(): Render[".md"] };
 "hangman.md": {
 	id: "hangman.md";
   slug: "hangman";
   body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
+  collection: "archive";
+  data: any
 } & { render(): Render[".md"] };
+"physics-calc.md": {
+	id: "physics-calc.md";
+  slug: "physics-calc";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+"portfolio-website.md": {
+	id: "portfolio-website.md";
+  slug: "portfolio-website";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+"post1.md": {
+	id: "post1.md";
+  slug: "post1";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+"post2.md": {
+	id: "post2.md";
+  slug: "post2";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+"post3.md": {
+	id: "post3.md";
+  slug: "post3";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+"post4.md": {
+	id: "post4.md";
+  slug: "post4";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+"terminal-rpg.md": {
+	id: "terminal-rpg.md";
+  slug: "terminal-rpg";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+"youmecar.md": {
+	id: "youmecar.md";
+  slug: "youmecar";
+  body: string;
+  collection: "archive";
+  data: any
+} & { render(): Render[".md"] };
+};
+"projects": {
 "manim.md": {
 	id: "manim.md";
   slug: "manim";
@@ -226,30 +275,16 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"physics-calc.md": {
-	id: "physics-calc.md";
-  slug: "physics-calc";
+"swoosh.md": {
+	id: "swoosh.md";
+  slug: "swoosh";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"portfolio-website.md": {
-	id: "portfolio-website.md";
-  slug: "portfolio-website";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"terminal-rpg.md": {
-	id: "terminal-rpg.md";
-  slug: "terminal-rpg";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"youmecar.md": {
-	id: "youmecar.md";
-  slug: "youmecar";
+"trenchtown.md": {
+	id: "trenchtown.md";
+  slug: "trenchtown";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
