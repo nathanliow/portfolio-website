@@ -261,9 +261,23 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "projects": {
+"inflection.md": {
+	id: "inflection.md";
+  slug: "inflection";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
 "manim.md": {
 	id: "manim.md";
   slug: "manim";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"opensol.md": {
+	id: "opensol.md";
+  slug: "opensol";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">

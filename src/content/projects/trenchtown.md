@@ -4,37 +4,75 @@ description: "A platform to make trading on-chain competitive and fun. Pivoted t
 portfolio tracking on Solana."
 heroImage: "/projects/trenchtown/hero.png"
 pubDate: "July 8 2024"
-badge: "BUILDING"
+badge: ""
 tags: ["Web3", "Typescript", "Firebase"]
-code: ""
-demo: ""
+code: "https://github.com/trenchtowndotfun"
+demo: "https://www.trenchtown.fun/"
 blog: ""
 ---
 # Overview #
-A platform to officiate on-chain trading competitions to provide a new and fun aspect to "degening" and trading. The competition will have a jackpot that is funded by an entry fee which will then be distributed to the winners. The winner is decided by the wallet or wallets that have the highest cumulative PNL percentage, accounting for both realized and unrealized gains. 
+Originally a platform to officiate on-chain trading competitions to provide a new and fun aspect to "degening" and trading. The competition will have a jackpot that is funded by an entry fee which will then be distributed to the winners. The winner is decided by the wallet or wallets that have the highest cumulative PNL percentage, accounting for both realized and unrealized gains. We then pivoted to a portfolio tracking platform that allows users to track their positions and PNL across all tokens traded.
+
+<center>
+  <Image
+    src="/projects/trenchtown/preview.png"
+    width="400"
+    height="200"
+    format="png"
+    alt="Portfolio Preview"
+    class="image"
+  />
+  <p class="caption">Portfolio Preview</p>
+</center>
 
 # Purpose #
-We saw an opportunity to expand and "gamify" the game that everyone was already playing. People were quick to boast about their profits on Twitter but often lacked proof. We are here to allow the traders and private groups to prove themselves and to show the world their genuine skills. Traders wouldn't have to change their routine, they simply have to do what they have always been doing. We believe this could become an event that everyone would monitor and be excited to compete in. 
+We saw an opportunity to expand and "gamify" the game that everyone was already playing. People were quick to boast about their profits on Twitter but often lacked proof. We are here to allow the traders and private groups to prove themselves and to show the world their genuine skills. Traders wouldn't have to change their routine, they simply have to do what they have always been doing. We believe this could become an event that everyone would monitor and be excited to compete in.
+
+Then this idea became hard to sustain as we found it hard to have players come back every week to compete and the platform was heavily dependent on the market conditions. So we pivoted to be a portfolio tracking platform that aimed to be more accurate than other existing solutions in the Solana ecosystem. We saw that the PNL data that was provided other platforms were incredibly inaccurate often due to multiple reasons: fees, incorrect transaction parsing, unsupported platforms, liquidity trades, unintuitive UI, and denominating in only SOL or only USD.
 
 # How it was made #
-For the backend, I began working on the challenge of getting accurate profit and loss (PNL) data myself. I considered some PNL APIs such as <a target="_blank" href="https://api-info.cielo.finance/">Cielo Finance</a> which would easily return the PNL for every SPL token a wallet has traded as well as their unrealized profits. This would have made the process much faster and smoother but it wasn't viable due to the price and response times of the APIs. After much research and consideration, I decided to use Helius' API to get the transaction data for a wallet. This would mean I would be able to calculate how much Solana (SOL) leaves and enters an account when they swap for a specific SPL token. This approach was also more sustainable as the number of credits used is significantly less than using Cielo's APIs. 
+To get accurate PNL data, we used Helius to fetch a wallet's signatures. These signatures are then converted to readable transactions and parsed to extract the necessary data (input token, output token, amounts, etc.) which are then combined together to get the PNL over a certain timeframe. Combined PNL data is then stored in Firebase which is then fetched and displayed on the frontend.
 
-Using Helius' API, I'm able to keep track of each token traded and send it to the Firestore database. This proved challenging as a lot of optimizations needed to be made in order to cut down the processing time to get a wallet's PNL. Eventually, I shortened a 3 to 4 minute wait time to a few hundred milliseconds. This was necessary if we were going to get the PNL of many wallets all at the same time. 
-
-After completing this task, I linked all the processing to the database and began testing the program. This took several days to debug as there were many edge cases to iron out and design around. An example is considering the tokens a user may already have before the game starts, which if sold, should not be counted into their profit and losses as it was beyond the scope of the game's timeframe. 
-
-The frontend was first designed on Figma, going through several iterations of a design that we felt would match the competitive theme well. We decided to go for a futuristic theme that would style blue and orange neon accents. After designing, we then started implementing components and pages within a NextJS project. This process took several iterations as well as we ran into many troubles with file structuring and interactions with backend code.
+The frontend was built using NextJS, TailwindCSS, and express APIs. The design was kept minimalistic and modern with a focus on usability and intuitiveness. 
 
 # Challenges #
 1. &nbsp;&nbsp;&nbsp;&nbsp;1\. Optimizing PNL processing
-2. &nbsp;&nbsp;&nbsp;&nbsp;2\. Working with other tools/platforms
-3. &nbsp;&nbsp;&nbsp;&nbsp;3\. Linking the frontend with the backend
+2. &nbsp;&nbsp;&nbsp;&nbsp;2\. Data storage and efficiency
+3. &nbsp;&nbsp;&nbsp;&nbsp;3\. Unreliable archival data retrieval
 
-Optimizing PNL took a lot of iterations to get right as I needed to account for all the swaps and transfers within a certain timeframe. I needed to weed out the transfers that didn't matter such as token account creation, NFT swaps, token mints, etc. I also needed to only process the transactions that fell within the game's time frame in a chronological order. This was to ensure that we kept track of all the tokens that were swapped within the timeframe and excluding those that were bought before the game started. 
+Optimizing PNL took a lot of iterations to get right as we needed to parse every Solana protocol to get the accurate information. This involved a parsing algorithm that would need to check every transaction element (swap data, account addresses, transaction type, etc.) to figure out what kind of transaction it was and what protocol it was coming from. Transaction types involved: swaps, transfers, mints, burns, and liquidity add/remove. Some protocols included Jupiter, Raydium, Bonkbot, Photon, Bullx, pump.fun, DAOs.fun, LMAO.fun, and Dexscreener's Moonshot. Then we needed to process as many transactions in parallel as possible given the Helius API's rate limits.
 
-Another challenge was working with the various other platforms within the Solana ecosystem. Jupiter, an aggregator that finds the best routes to swap currencies, uses a vastly different transaction system than Bonkbot, a telegram bot that thousands of users use to trade SPL tokens. Then Bonkbot's transactions varies from those using Photon or Bullx, both web app trading platforms. Then I needed to account for tokens that were not seeded on Raydium, in other words, did not have a liquidity pool for actual trading. These tokens were on pump.fun and Dexscreener's Moonshot, both platforms that easily allows anyone to launch an SPL token. The way these platforms and tools take in fees were different, all in all making the process a large mess. Much of this was resolved by keeping track of what program and address the transaction interacted with, which allowed me to accurately process the transaction based on the characteristics of the transaction. For example, Bonkbot transactions interact with the Bonkbot fee address in order to get fees, which can differentiate the transaction from a different platform's transaction.
+Given the amount of data, reads, and writes required for TrenchTown.fun, we designed a database schema that would make querying easier. All transactions and combined PNL data is stored in documents in a subcollection for a user. Each document is separated to hold data from 00:00:00 UTC to 23:59:59 UTC of a certain day. Documents in firebase have constraints as well so document ids were named to be in the format of (UTC day)_(index) where index is the ith document of that day. To fetch the cumulative portfolio data for a timeframe, we would fetch all documents that contained relevant data and then recombined such data to display on the frontend.
+<center>
+  <Image
+    src="/projects/trenchtown/portfolioFetching.png"
+    width="400"
+    height="200"
+    format="png"
+    alt="Portfolio Fetching"
+    class="image"
+  />
+  <p class="caption">Design of fetching portfolio data from Firebase</p>
+</center>
 
-Another problem we ran into was linking the frontend with the backend in a seamless and simple manner that we believe we could scale later in the future. We believe that we had to design it in a way so that it won't be a burden that will hinder a possible expansion of features or development. This led to a lot of restructuring, designing, and guessing in order to settle on a structure that we liked and had the best chance to scale.
+Another unforseen challenge was Solana's incapability to retrieve archival data. The RPC getSignaturesForAddress() is unreliable and may return 0 signatures, skip over some signatures, or time out. This is because of Google BigTable query timing out but fetching older transactions also become longer to query as well. We solved this by implementing a Google Cloud Function to continously refetch data for a wallet until we were sure there were no more signatures to fetch.
+
+# Prizes #
+1. &nbsp;&nbsp;&nbsp;&nbsp;- Honorable Mention in Colosseum's Radar Hackathon (<a target="_blank" href="https://blog.colosseum.org/announcing-the-winners-of-the-solana-radar-hackathon/">Blog Post</a>)
+2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 13,671 participants, 156 countries, 1,359 final projects
+3. &nbsp;&nbsp;&nbsp;&nbsp;- Awarded $7,500 in grant funding from Solana Foundation and Texas Blockchain Incubator Program
+<br>
 
 # Conclusion #
-Much of this project has taught me a lot about the Solana blockchain. From how accounts work to the way transactions are formatted and read. It was a lot to learn but it was a project I'm extremely passionate about. I think the idea could rapidly gain popularity within "Crypto Twitter" and I think it could distrupt the Solana ecosystem in a positive way. Only time will tell...
+Much of this project has taught me a lot about the Solana blockchain and ecosystem. I've grown in my technical ability in both web2 and web3 aspects but I've also met a lot of new people because of this project. 
+
+# Full Tech Stack #  
+| Languages    | Libraries     | Tools     | Chains   |
+| :----------- | :------------ | :-------- | :------- | 
+| - TypeScript | - TailwindCSS | - Cursor  | - Solana |
+| - HTML       | - React.js    | - Birdeye |          |
+| - CSS        | - Helius SDK  | - Vercel  |          |
+|              | - Raydium SDK |           |          |
+|              | - Solana SDK  |           |          |
+|              | - Web3js      |           |          |
+|              | - Firebase    |           |          |
