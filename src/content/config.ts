@@ -11,7 +11,7 @@ const projectSchema = z.object({
     }).optional(),
     code: z.string().optional(),
     demo: z.string().optional(),
-    blog: z.string().optional(),
+    socials: z.string().optional(),
 });
 
 export type ProjectSchema = z.infer<typeof projectSchema>;

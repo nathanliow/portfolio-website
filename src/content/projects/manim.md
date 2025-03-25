@@ -7,7 +7,7 @@ badge: ""
 tags: ["Python", "Manim", "Video Animation"]
 code: "https://github.com/nathanliow/Physics-with-Manim"
 demo: "https://youtu.be/7Fo4dofZfcc"
-blog: ""
+socials: ""
 ---
 # Overview #
 A 3D animation of Ampere's Law as learned in my AP Physics C: Electricity and Magnetism class.

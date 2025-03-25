@@ -7,7 +7,7 @@ badge: ""
 tags: ["Web3", "Solidity"]
 code: "https://github.com/sreeduggirala/swoosh"
 demo: "https://swoosh-eth-denver.vercel.app/"
-blog: "https://devfolio.co/projects/swoosh-d164"
+socials: "https://devfolio.co/projects/swoosh-d164"
 ---
 # Background #
 ETH Denver is one of, if not the largest crypto and web3 convention in North America. This is where many web3 companies come to showcase and present their projects to investors, developers, and enthusiasts. They also host a hackathon to allow developers to build on specific platforms or chains and to learn more about new technologies. As part of the Labs Division of Texas Blockchain, we came out to Denver to participate in the hackathon to win some bounties and meet different teams and companies.

@@ -8,7 +8,7 @@ badge: ""
 tags: ["Web3", "Typescript", "Firebase"]
 code: "https://github.com/trenchtowndotfun"
 demo: "https://www.trenchtown.fun/"
-blog: ""
+socials: "https://x.com/playtrenchtown"
 ---
 # Overview #
 Originally a platform to officiate on-chain trading competitions to provide a new and fun aspect to "degening" and trading. The competition will have a jackpot that is funded by an entry fee which will then be distributed to the winners. The winner is decided by the wallet or wallets that have the highest cumulative PNL percentage, accounting for both realized and unrealized gains. We then pivoted to a portfolio tracking platform that allows users to track their positions and PNL across all tokens traded.

@@ -7,7 +7,7 @@ badge: ""
 tags: ["Non-Tech"]
 code: ""
 demo: ""
-blog: ""
+socials: ""
 ---
 <a target="_blank" href="/projects/physGO/phys1.pdf" download="AP Physics 1 Graphic Organizer">AP Physics 1 Graphic Organizer (PDF)</a>
 <br/>

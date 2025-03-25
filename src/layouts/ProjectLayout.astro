@@ -4,7 +4,7 @@ import BaseLayout from "./BaseLayout.astro";
 
 export interface Props extends ProjectSchema {}
 
-const { title, description, heroImage, badge, tags = [], code, demo } = Astro.props;
+const { title, description, heroImage, badge, tags = [], code, demo, socials } = Astro.props;
 import { Image } from "astro:assets";
 ---
 
@@ -24,6 +24,11 @@ import { Image } from "astro:assets";
         {demo && <a href={demo} target="_blank" class="source">
             <div class="source-text">
               Demo
+            </div>
+        </a>}
+        {socials && <a href={socials} target="_blank" class="source">
+            <div class="source-text">
+              Socials
             </div>
         </a>}
       </div>
