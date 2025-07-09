@@ -58,7 +58,7 @@ Given the amount of data, reads, and writes required for TrenchTown.fun, we desi
 Another unforseen challenge was Solana's incapability to retrieve archival data. The RPC getSignaturesForAddress() is unreliable and may return 0 signatures, skip over some signatures, or time out. This is because of Google BigTable query timing out but fetching older transactions also become longer to query as well. We solved this by implementing a Google Cloud Function to continously refetch data for a wallet until we were sure there were no more signatures to fetch.
 
 # Prizes #
-1. &nbsp;&nbsp;&nbsp;&nbsp;- Honorable Mention in Colosseum's Radar Hackathon (<a target="_blank" href="https://blog.colosseum.org/announcing-the-winners-of-the-solana-radar-hackathon/">Blog Post</a>)
+1. &nbsp;&nbsp;&nbsp;&nbsp;- Honorable Mention in Colosseum's Radar Hackathon (<a target="_blank" href="https://blog.colosseum.org/announcing-the-winners-of-the-solana-radar-hackathon/">Blog Post</a>)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 13,671 participants, 156 countries, 1,359 final projects
 2. &nbsp;&nbsp;&nbsp;&nbsp;- Awarded $7,500 in grant funding from Solana Foundation and Texas Blockchain Incubator Program
 <br>

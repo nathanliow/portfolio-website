@@ -12,6 +12,36 @@ socials: "https://x.com/opensoldev"
 # Overview #
 OpenSOL is a no-code solution to help students learn how to create Solana programs and applications using blocks and edges. It allows users to browse other people's designs, execute blockchain interaction logic on the browser, and generate functional code.
 
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <div style="text-align: center;">
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/-1BOQbdPYVw?si=TPltiZXigBzN7n22" title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+    >
+    </iframe>
+    <p class="caption">openSOL Pitch</p>
+  </div>
+
+  <div style="text-align: center;">
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/5Zrw9Ni8vmI?si=qlHHt8huaqoJEf7w" title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+    >
+    </iframe>
+    <p class="caption">openSOL Technical Demo</p>
+  </div>
+</div>
+
 # Purpose #
 As head of the engineering division at Texas Blockchain, my role involves educating students EVM and SVM development to compete in web3 hackathons all around the world. Education is the largest point of discussion for all university blockchain clubs. This is because we are at the forefront of onboarding new people into web3 and crypto and they need to know whats going on. Whether that's the financial side or the technical side of things, clubs have to do a great deal of education into this vast industry. To make technical education for blockchain development easier, I wanted to build something that will allow students to learn, get their hands dirty, and find as a useful tool for real-world development. All of this on top of making it as intuitive and simple as possible to lower the barrier of entry. OpenSOL is a lot like <a target="_blank" href="https://scratch.mit.edu/">Scratch</a>, a popular educational platform for programming, and I believe it can borrow a lot of the success from its core concepts. Education is important because it powers the developers which powers the entire ecosystem.
 
@@ -45,9 +75,11 @@ The main challenge was making a system that would abstract a lot of the coding l
 Another challenge was allowing users to handle blockchain interaction straight from their browser. Since openSOL allows users to execute their logic on the browser, we would need to abstract away all forms of blockchain connections and interactions. This took a lot of iterations but React Hooks became the best way to do this to allow imported functions to be executed while allowing wallet signing and awaiting as well. 
 
 # Prizes #
-1. &nbsp;&nbsp;&nbsp;&nbsp;- 1st place at Solana Colosseum Breakout Hackathon University Track ($10,000)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 11,701 participants, 147 countries, 1,412 final projects
-2. &nbsp;&nbsp;&nbsp;&nbsp;- 2nd place at N3xus Campus Buildathon ($2,000) 
+1. &nbsp;&nbsp;&nbsp;&nbsp;- 1st place at Solana Colosseum Breakout Hackathon University Track ($10,000)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 11,701 participants, 147 countries, 1,412 final projects<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a target="_blank" href="https://blog.colosseum.com/announcing-the-winners-of-the-solana-breakout-hackathon/
+">Colosseum Winners Blog Post</a>
+2. &nbsp;&nbsp;&nbsp;&nbsp;- 2nd place at N3xus Campus Buildathon ($2,000)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 200+ participants
 3. &nbsp;&nbsp;&nbsp;&nbsp;- 3rd place at Texas Blockchain x Texas Venture Group Pitch Competition ($500)
 <br>
