@@ -24,8 +24,8 @@ A challenge we faced when building Swoosh was connecting to the different APIs a
 Another challenge we faced was the lack of clear and concise documentation for developers that were completely new to the ecosystem or its tools. We found this to be a common problem among most SDKs as naturally, these products are constantly changing and documentation often lags far behind to match the current state of the product. This made it hard to use some new tools that we were using to build our app and led to constant trial and error in order to get adequate integration.  
 
 # Prizes #
-1. &nbsp;&nbsp;&nbsp;&nbsp;- Best Solana DeFi/Payments Integration (<a target="_blank" href="https://twitter.com/solana_devs/status/1769766724411232680?t=9CzhNLP6RssQFRWgDHxRdg">Twitter Post</a>)
-2. &nbsp;&nbsp;&nbsp;&nbsp;- Most creative BUIDL using XDC network  
+1. &nbsp;&nbsp;&nbsp;&nbsp;- Best Solana DeFi/Payments Integration (<a target="_blank" href="https://twitter.com/solana_devs/status/1769766724411232680?t=9CzhNLP6RssQFRWgDHxRdg">Twitter Post</a>) ($2,000)
+2. &nbsp;&nbsp;&nbsp;&nbsp;- Most creative BUIDL using XDC network ($1,500)
 <br>
 
 # Full Tech Stack #  

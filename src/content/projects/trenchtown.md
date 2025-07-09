@@ -59,8 +59,8 @@ Another unforseen challenge was Solana's incapability to retrieve archival data.
 
 # Prizes #
 1. &nbsp;&nbsp;&nbsp;&nbsp;- Honorable Mention in Colosseum's Radar Hackathon (<a target="_blank" href="https://blog.colosseum.org/announcing-the-winners-of-the-solana-radar-hackathon/">Blog Post</a>)
-2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 13,671 participants, 156 countries, 1,359 final projects
-3. &nbsp;&nbsp;&nbsp;&nbsp;- Awarded $7,500 in grant funding from Solana Foundation and Texas Blockchain Incubator Program
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 13,671 participants, 156 countries, 1,359 final projects
+2. &nbsp;&nbsp;&nbsp;&nbsp;- Awarded $7,500 in grant funding from Solana Foundation and Texas Blockchain Incubator Program
 <br>
 
 # Conclusion #
