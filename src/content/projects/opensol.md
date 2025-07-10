@@ -13,10 +13,9 @@ socials: "https://x.com/opensoldev"
 OpenSOL is a no-code solution to help students learn how to create Solana programs and applications using blocks and edges. It allows users to browse other people's designs, execute blockchain interaction logic on the browser, and generate functional code.
 
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <div style="text-align: center;">
+  <div style="text-align: center; max-width: 100%;">
     <iframe 
-      width="560" 
-      height="315" 
+      style="width: min(560px, 90vw); height: calc(min(560px, 90vw) * 9/16); max-width: 100%;" 
       src="https://www.youtube.com/embed/-1BOQbdPYVw?si=TPltiZXigBzN7n22" title="YouTube video player" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -27,10 +26,9 @@ OpenSOL is a no-code solution to help students learn how to create Solana progra
     <p class="caption">openSOL Pitch</p>
   </div>
 
-  <div style="text-align: center;">
+  <div style="text-align: center; max-width: 100%;">
     <iframe 
-      width="560" 
-      height="315" 
+      style="width: min(560px, 90vw); height: calc(min(560px, 90vw) * 9/16); max-width: 100%;" 
       src="https://www.youtube.com/embed/5Zrw9Ni8vmI?si=qlHHt8huaqoJEf7w" title="YouTube video player" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
